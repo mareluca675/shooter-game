@@ -13,17 +13,13 @@ private:
 	void render();
 private:
 	sf::RenderWindow window;
-
-	// Player
-	sf::CircleShape player;
-	void handlePlayerInput(sf::Keyboard::Key, bool);
-	
-	// Movement
+	sf::CircleShape player;	// Player movement
 	const float PLAYER_SPEED = 6.25f;
-	bool isMovingUp = false;
-	bool isMovingDown = false;
-	bool isMovingLeft = false;
-	bool isMovingRight = false;
+	void handlePlayerInput(sf::Keyboard::Key, bool);
+	bool isMovingUp;
+	bool isMovingDown;
+	bool isMovingLeft;
+	bool isMovingRight;
 };
 
 #endif

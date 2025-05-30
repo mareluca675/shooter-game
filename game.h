@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "player.h"
 
 #ifndef GAME_H
 #define GAME_H
@@ -13,10 +14,9 @@ private:
 	void render();
 private:
 	sf::RenderWindow window;
-	sf::CircleShape player;	
 	
-	// Player movement
-	const float PLAYER_SPEED = 200.0f;
+	// Player 
+	Player player;
 	void handlePlayerInput(sf::Keyboard::Key, bool);
 	bool isMovingUp = false;
 	bool isMovingDown = false;

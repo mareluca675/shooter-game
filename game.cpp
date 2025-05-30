@@ -3,9 +3,6 @@
 Game::Game() {
 	window.create(sf::VideoMode(1920, 1080), "Shooter");
 	window.setFramerateLimit(60);
-	player.setRadius(50.f);
-	player.setPosition(160.0f, 40.0f);
-	player.setFillColor(sf::Color::Green);
 }
 
 void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed) {
@@ -49,13 +46,13 @@ void Game::update(sf::Time deltaTime) {
 		direction /= magnitude;
 	}
 
-	sf::Vector2f movement = direction * PLAYER_SPEED;
-	player.move(movement * deltaTime.asSeconds());
+	sf::Vector2f movement = direction * player.getPlayerSpeed();
+	player.getShape().move(movement * deltaTime.asSeconds());
 }
 
 void Game::render() {
 	window.clear(sf::Color::Black);
-	window.draw(player);
+	window.draw(player.getShape());
 	window.display();
 }
 

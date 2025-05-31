@@ -20,6 +20,11 @@ public:
 	sf::Vector2f getAimDir() { return aimDir; }
 	sf::Vector2f getAimDirNorm() { return aimDirNorm; }
 	const float getPlayerSpeed() const { return PLAYER_SPEED; }
+
+	// Setters
+	void setCenter(const sf::Vector2f& newCenter) { center = newCenter; }
+	void setAimDir(const sf::Vector2f& newAimDir) { aimDir = newAimDir; }
+	void setAimDirNorm(const sf::Vector2f& newAimDirNorm) { aimDirNorm = newAimDirNorm; }
 };
 
 #endif

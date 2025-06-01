@@ -9,7 +9,7 @@ private:
 	sf::Vector2f center;
 	sf::Vector2f aimDir;
 	sf::Vector2f aimDirNorm;
-	const float PLAYER_SPEED = 200.0f;
+	const float PLAYER_SPEED = 250.0f;
 public:
 	// Constructor
 	Player();

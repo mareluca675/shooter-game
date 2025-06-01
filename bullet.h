@@ -7,7 +7,7 @@ class Bullet {
 private:
 	sf::CircleShape shape;
 	sf::Vector2f currVelocity;
-	const float SPEED = 1000.0f;
+	const float SPEED = 2500.0f;
 public:
 	Bullet();
 	

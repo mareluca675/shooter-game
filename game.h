@@ -1,6 +1,8 @@
 #include <SFML/Graphics.hpp>
 #include "player.h"
 #include "bullet.h"
+#include "game_map.h"
+#include "config.h"
 
 #ifndef GAME_H
 #define GAME_H
@@ -14,8 +16,12 @@ private:
 	void update(sf::Time);
 	void render();
 private:
+	// Window
 	sf::RenderWindow window;
 	
+	// Game map
+	GameMap* gameMap;
+
 	// Player 
 	Player player;
 	void handleKeyboardInput(sf::Keyboard::Key, bool);

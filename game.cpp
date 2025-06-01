@@ -2,8 +2,11 @@
 #include <iostream>
 
 Game::Game() {
-	window.create(sf::VideoMode(1920, 1080), "Shooter");
+	window.create(sf::VideoMode(kScreenWidth, kScreenHeight), "Shooter");
 	window.setFramerateLimit(60);
+	gameMap = new GameMap(kMapWidthInTiles, kMapHeightInTiles,
+						  kMapFillPercentage, kTileWidthInPixels,
+						  kTileHeightInPixels, window);
 }
 
 void Game::addBullet() {
@@ -20,6 +23,8 @@ void Game::handleMouseInput(sf::Mouse::Button button, bool isPressed = true) {
 	return;
 }
 
+
+
 void Game::handleKeyboardInput(sf::Keyboard::Key key, bool isPressed = true) {
 	if (key == sf::Keyboard::W)
 		isMovingUp = isPressed;
@@ -29,6 +34,8 @@ void Game::handleKeyboardInput(sf::Keyboard::Key key, bool isPressed = true) {
 		isMovingLeft = isPressed;
 	if (key == sf::Keyboard::D)
 		isMovingRight = isPressed;
+	if (key == sf::Keyboard::G) // Change map
+		gameMap->ProcessMap(window);
 	return;
 }
 
@@ -94,13 +101,11 @@ void Game::update(sf::Time deltaTime) {
 void Game::render() {
 	window.clear(sf::Color::Black);
 
+	// Game map rendering
+	gameMap->DrawMap(window, kOffsetX, kOffsetY);
+
 	// Player rendering
 	window.draw(player.getShape());
-
-	// Bullets rendering
-	for (Bullet& bullet : bullets) {
-		window.draw(bullet.getShape());
-	}
 
 	window.display();
 }

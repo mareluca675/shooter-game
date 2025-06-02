@@ -16,6 +16,8 @@ public:
     int tile_width_in_pixels_ = 0;
     int tile_height_in_pixels_ = 0;
     std::vector<Room*> room_vector_;
+	bool isGenerated = false;
+    sf::Mutex generateMutex;
 public:
     GameMap(int width, int height, int map_fill_percentage,
         int tile_width_in_pixels, int tile_height_in_pixels,

@@ -17,7 +17,6 @@ constexpr int kOffsetY = (kScreenHeight - kMapHeightInPixels) / 2;
 constexpr int kNumIterationsSmooth = 1;
 constexpr double kEpsilon = 0.000001;
 constexpr int kMapFillPercentage = 48;
-constexpr int kControlsTextSize = 25;
 const double kSqrt2 = std::sqrt(2);
 
 // If dead cell has number of neighbors that

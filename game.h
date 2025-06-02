@@ -12,10 +12,20 @@ public:
 	Game();
 	void run();
 private:
+	enum class GameState {
+		LOADING,
+		PLAYING
+	};
+
+	// Game state
+	GameState currentState = GameState::LOADING;
+	sf::Thread mapThread;
+	sf::Font loadingTextFont;
+	
 	void processEvents();
 	void update(sf::Time);
 	void render();
-private:
+
 	// Window
 	sf::RenderWindow window;
 	

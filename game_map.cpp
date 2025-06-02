@@ -19,6 +19,23 @@ GameMap::GameMap(int width, int height, int map_fill_percentage,
     RandomizeMap(0);
 }
 
+void GameMap::ProcessMap(sf::RenderWindow& window) {
+    RandomizeMap(map_fill_percentage_);
+    SmoothMap(kNumIterationsSmooth);
+    room_vector_ = GenerateRooms();
+    ConnectRooms(room_vector_);
+
+    // DrawRoomConnections(window);
+    SmoothMap(kNumIterationsSmooth);
+    CreatePassageways();
+    RemoveConnectedComponents(room_vector_);
+
+    {
+        sf::Lock lock(generateMutex);
+        isGenerated = true;
+    }
+}
+
 void GameMap::Reset() {
     char_map_ = std::vector<std::vector<char> >(Width(), std::vector<char>(Height(), '1'));
 }
@@ -80,13 +97,13 @@ void GameMap::SmoothMap(int num_iterations) {
                 char curr = char_map_[i][j];
                 int cnt = CountNeighborWalls(i, j);
 
-                if (curr == '0') { // if the cell is dead
+                if (curr == '0') { // If the cell is dead
                     if (std::find(BIRTH_VALUES.begin(), BIRTH_VALUES.end(), cnt) !=
                         BIRTH_VALUES.end()) {
                         char_map_[i][j] = '1';
                     }
                 }
-                else { // if the cell is alive
+                else { // If the cell is alive
                     if (std::find(SURVIVE_VALUES.begin(), SURVIVE_VALUES.end(), cnt) ==
                         SURVIVE_VALUES.end()) {
                         char_map_[i][j] = '0';
@@ -105,10 +122,10 @@ void GameMap::DrawMap(sf::RenderWindow& window, double offset_x, double offset_y
             rect.setPosition(sf::Vector2f(offset_x + j * tile_width_in_pixels_, offset_y + i * tile_width_in_pixels_));
 
             if (char_map_[i][j] == '1') {
-                rect.setFillColor(sf::Color(0, 0, 0));
+                rect.setFillColor(sf::Color::White);
             }
             else {
-                rect.setFillColor(sf::Color(255, 255, 255));
+                rect.setFillColor(sf::Color::Black);
             }
 
             window.draw(rect);
@@ -367,19 +384,6 @@ void GameMap::ConnectRooms(std::vector<Room*>& rooms) {
         GroupRoomsIntoConnectedComponents(room_vector_);
 }
 
-void GameMap::ProcessMap(sf::RenderWindow& window) {
-    RandomizeMap(map_fill_percentage_);
-    SmoothMap(kNumIterationsSmooth);
-    room_vector_ = GenerateRooms();
-    ConnectRooms(room_vector_);
-
-    //DrawRoomConnections(window);
-    SmoothMap(kNumIterationsSmooth);
-    CreatePassageways();
-    RemoveConnectedComponents(room_vector_);
-}
-
-
 void GameMap::DrawRoomConnections(sf::RenderWindow& window) {
     for (int i = 0; i < room_vector_.size(); ++i) {
         Room* curr = room_vector_[i];
@@ -387,13 +391,16 @@ void GameMap::DrawRoomConnections(sf::RenderWindow& window) {
             if (curr == r) {
                 continue;
             }
+
             sf::VertexArray line(sf::LinesStrip, 2);
             int rand_index_0 = 0;
             int rand_index_1 = 0;
+
             line[0].position = sf::Vector2f(curr->node_vector_[rand_index_0]->x_ * kTileWidthInPixels + kOffsetX, curr->node_vector_[rand_index_0]->y_ * kTileWidthInPixels + kOffsetY);
             line[1].position = sf::Vector2f(r->node_vector_[rand_index_1]->x_ * kTileWidthInPixels + kOffsetX, r->node_vector_[rand_index_1]->y_ * kTileWidthInPixels + kOffsetY);
             line[0].color = sf::Color(255, 0, 0);
             line[1].color = sf::Color(255, 0, 0);
+
             window.draw(line);
         }
     }

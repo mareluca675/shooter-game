@@ -28,6 +28,9 @@ private:
 
 	// Window
 	sf::RenderWindow window;
+
+	// Camera
+	sf::View cameraView;
 	
 	// Game map
 	GameMap* gameMap;

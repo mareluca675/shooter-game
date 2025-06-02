@@ -7,7 +7,8 @@ Game::Game() : mapThread([this]() { gameMap->ProcessMap(window); }) {
     gameMap = new GameMap(kMapWidthInTiles, kMapHeightInTiles,  
                           kMapFillPercentage, kTileWidthInPixels,  
                           kTileHeightInPixels, window);  
-	if (!loadingTextFont.loadFromFile("C:\\Users\\mare_\\source\\repos\\sfml-game\\fonts\\pixel_font.ttf")) {
+	cameraView.reset(sf::FloatRect(0, 0, window.getSize().x, window.getSize().y));
+	if (!loadingTextFont.loadFromFile("C:/Users/mare_/Documents/Programming/C++/Projects/shooter-game/fonts/pixel_font.ttf")) {
 		std::cerr << "Error loading font" << std::endl;
 		return;
 	}
@@ -95,14 +96,22 @@ void Game::update(sf::Time deltaTime) {
 
 		// Player shooting logic
 
+		// Update camera view to follow the player	
+		cameraView.setCenter(player.getCenter());
+
 		// Set player center and aim direction
 		player.setCenter(sf::Vector2f(player.getShape().getPosition().x + player.getShape().getRadius(),
 			player.getShape().getPosition().y + player.getShape().getRadius()));
-		player.setAimDir(sf::Vector2f(sf::Mouse::getPosition(window)) - player.getCenter());
+		sf::Vector2f mouseWorldPos = window.mapPixelToCoords(sf::Mouse::getPosition(window), cameraView);
+		player.setAimDir(mouseWorldPos - player.getCenter());
 
 		// N(V) = V / |V|
 		player.setAimDirNorm(player.getAimDir() / sqrt(player.getAimDir().x * player.getAimDir().x
-			+ player.getAimDir().y * player.getAimDir().y));
+						   + player.getAimDir().y * player.getAimDir().y));
+
+		std::cout << "Aim dir normalized: " << player.getAimDirNorm().x << ", "
+											<< player.getAimDirNorm().y << std::endl;
+
 		// Process bullet movement
 		for (Bullet& bullet : bullets) {
 			bullet.getShape().move(bullet.getCurrVelocity() * deltaTime.asSeconds());
@@ -119,6 +128,9 @@ void Game::render() {
 	}
 	else {
 		window.clear(sf::Color::Black);
+
+		// Adjusting camera view
+		window.setView(cameraView);
 
 		// Game map rendering
 		gameMap->DrawMap(window, kOffsetX, kOffsetY);

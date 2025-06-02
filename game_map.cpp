@@ -431,3 +431,24 @@ int GameMap::CountNeighborsDist(int i, int j, char c, int dist) {
 
     return cnt;
 }
+
+bool GameMap::isColliding(Player player) {
+    float playerX = player.getCenter().x + player.getShape().getRadius() - kOffsetX;
+    float playerY = player.getCenter().y + player.getShape().getRadius() - kOffsetY;
+
+    int startRow = std::max(0, static_cast<int>(std::floor(playerY / kTileWidthInPixels)));
+    int endRow = std::min(Height() - 1, static_cast<int>(std::floor(playerY / kTileWidthInPixels)));
+    int startCol = std::max(0, static_cast<int>(std::floor(playerX / kTileHeightInPixels)));
+    int endCol = std::min(Width() - 1, static_cast<int>(std::floor(playerX / kTileHeightInPixels)));
+
+    // Check each overlapping tile
+    for (int i = startRow; i <= endRow; ++i) {
+        for (int j = startCol; j <= endCol; ++j) {
+            if (char_map_[i][j] == '1') {
+                return true; // Collision with a wall
+            }
+        }
+    }
+
+    return false; // No collision
+}

@@ -1,4 +1,5 @@
 #include "game.h"
+#include "rng.h"
 #include <iostream>
 
 Game::Game() : mapThread([this]() { gameMap->ProcessMap(window); }) {
@@ -11,6 +12,16 @@ Game::Game() : mapThread([this]() { gameMap->ProcessMap(window); }) {
 	if (!loadingTextFont.loadFromFile("C:/Users/mare_/Documents/Programming/C++/Projects/shooter-game/fonts/pixel_font.ttf")) {
 		std::cerr << "Error loading font" << std::endl;
 		return;
+	}
+
+	player.getShape().setPosition(sf::Vector2f(0.0f, 0.0f));
+
+	while (gameMap->isColliding(player)) {
+		sf::Vector2f position;
+		position.x = Rng::IntInRange(0, gameMap->Height());
+		position.y = Rng::IntInRange(0, gameMap->Width());
+		player.getShape().setPosition(position);
+		std::cout << "Respawned\n";
 	}
 }
 
@@ -92,7 +103,12 @@ void Game::update(sf::Time deltaTime) {
 
 		// Process player movement
 		sf::Vector2f movement = direction * player.getPlayerSpeed();
-		player.getShape().move(movement * deltaTime.asSeconds());
+
+		Player playerRayCast = player;
+		playerRayCast.getShape().move(movement * deltaTime.asSeconds());
+
+		if (!gameMap->isColliding(playerRayCast))
+			player.getShape().move(movement * deltaTime.asSeconds());
 
 		// Player shooting logic
 
@@ -109,8 +125,8 @@ void Game::update(sf::Time deltaTime) {
 		player.setAimDirNorm(player.getAimDir() / sqrt(player.getAimDir().x * player.getAimDir().x
 						   + player.getAimDir().y * player.getAimDir().y));
 
-		std::cout << "Aim dir normalized: " << player.getAimDirNorm().x << ", "
-											<< player.getAimDirNorm().y << std::endl;
+		/*std::cout << "Aim dir normalized: " << player.getAimDirNorm().x << ", "
+											<< player.getAimDirNorm().y << std::endl;*/
 
 		// Process bullet movement
 		for (Bullet& bullet : bullets) {

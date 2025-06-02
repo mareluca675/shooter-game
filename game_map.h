@@ -2,6 +2,7 @@
 #define GAME_MAP_H
 
 #include <SFML/Graphics.hpp>
+#include "player.h"
 #include <vector>
 
 class Room;
@@ -18,6 +19,7 @@ public:
     std::vector<Room*> room_vector_;
 	bool isGenerated = false;
     sf::Mutex generateMutex;
+    bool isColliding(Player);
 public:
     GameMap(int width, int height, int map_fill_percentage,
         int tile_width_in_pixels, int tile_height_in_pixels,

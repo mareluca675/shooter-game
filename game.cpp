@@ -35,7 +35,7 @@ void Game::handleKeyboardInput(sf::Keyboard::Key key, bool isPressed = true) {
 	if (key == sf::Keyboard::D)
 		isMovingRight = isPressed;
 	if (key == sf::Keyboard::G)
-		gameMap->ProcessMap(window);
+		gameMap->ProcessMap(window), spawnPlayer();
 	return;
 }
 
@@ -158,7 +158,7 @@ void Game::spawnPlayer() {
 		position.y = Rng::IntInRange(0, 10000);
 		player.getShape().setPosition(position);
 		player.setCenter(position);
-		//std::cout << "Respawned at " << position.x << ' ' << position.y << '\n';
+		std::cout << "Respawned at " << position.x << ' ' << position.y << '\n';
 	}
 }
 

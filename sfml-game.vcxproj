@@ -144,6 +144,7 @@
     <ClCompile Include="game_map.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="ray.cpp" />
     <ClCompile Include="rng.cpp" />
     <ClCompile Include="room.cpp" />
     <ClCompile Include="util.cpp" />
@@ -154,6 +155,7 @@
     <ClInclude Include="game.h" />
     <ClInclude Include="game_map.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="ray.h" />
     <ClInclude Include="rng.h" />
     <ClInclude Include="room.h" />
     <ClInclude Include="util.h" />

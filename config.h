@@ -4,6 +4,10 @@
 #include <vector>
 #include <cmath>
 
+// Raycast
+constexpr auto TWO_PI = 3.14159265358979f * 2;
+
+// Map
 constexpr int kScreenWidth = 1980;
 constexpr int kScreenHeight = 1080;
 constexpr int kMapWidthInTiles = 200;

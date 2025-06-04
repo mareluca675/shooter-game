@@ -19,20 +19,20 @@
     <Filter Include="Source Files\Game Map">
       <UniqueIdentifier>{ee48e5fd-14fa-4952-8bec-cc58ba28245b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Raycast">
+      <UniqueIdentifier>{b7f71458-d971-43ee-8e83-56f066f26e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main Stuff">
+      <UniqueIdentifier>{c2330ff9-3a16-413e-8de3-ce34f2f10d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main Stuff">
+      <UniqueIdentifier>{f2c1c982-66e5-4a58-8665-114a6ef467b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Raycast">
+      <UniqueIdentifier>{347cf6af-b2f1-4359-aeec-71c833ace9c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="player.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="bullet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="game_map.cpp">
       <Filter>Source Files\Game Map</Filter>
     </ClCompile>
@@ -45,17 +45,23 @@
     <ClCompile Include="util.cpp">
       <Filter>Source Files\Game Map</Filter>
     </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files\Main Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>Source Files\Main Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files\Main Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Main Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="ray.cpp">
+      <Filter>Source Files\Raycast</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="bullet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="config.h">
       <Filter>Header Files\Game Map</Filter>
     </ClInclude>
@@ -70,6 +76,18 @@
     </ClInclude>
     <ClInclude Include="game_map.h">
       <Filter>Header Files\Game Map</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files\Main Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>Header Files\Main Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files\Main Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="ray.h">
+      <Filter>Header Files\Raycast</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

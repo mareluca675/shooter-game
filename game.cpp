@@ -96,7 +96,7 @@ void Game::update(sf::Time deltaTime) {
 		player.getShape().move(0, movement.y);
 	}
 
-	std::cout << player.getShape().getPosition().x << ' ' << player.getShape().getPosition().y << '\n';
+	//std::cout << player.getShape().getPosition().x << ' ' << player.getShape().getPosition().y << '\n';
 
 	// Player shooting logic
 
@@ -141,28 +141,25 @@ void Game::render() {
 	window.display();
 }
 
-void Game::run() {
-	sf::Clock clock;
-	sf::Time timeSinceLastUpdate = sf::Time::Zero;
-	gameMap->ProcessMap(window);
-
+void Game::spawnPlayer() {
 	player.setCenter(sf::Vector2f(0.0f, 0.0f));
 	player.getShape().setPosition(sf::Vector2f(0.0f, 0.0f));
 
-	int attempts = 0;
-	const int maxAttempts = 100; // Prevent infinite loop
-
-	std::cout << gameMap->isColliding(player) << '\n';
-
-	while (gameMap->isColliding(player) && attempts < maxAttempts) {
+	while (gameMap->isColliding(player)) {
 		sf::Vector2f position;
 		position.x = Rng::IntInRange(0, 10000);
 		position.y = Rng::IntInRange(0, 10000);
 		player.getShape().setPosition(position);
 		player.setCenter(position);
-		std::cout << "Respawned at " << position.x << ' ' << position.y << '\n';
-		attempts++;
+		//std::cout << "Respawned at " << position.x << ' ' << position.y << '\n';
 	}
+}
+
+void Game::run() {
+	sf::Clock clock;
+	sf::Time timeSinceLastUpdate = sf::Time::Zero;
+	gameMap->ProcessMap(window);
+	spawnPlayer();
 
 	while (window.isOpen()) {
 		processEvents();

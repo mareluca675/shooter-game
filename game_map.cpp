@@ -116,10 +116,10 @@ void GameMap::DrawMap(sf::RenderWindow& window, double offset_x, double offset_y
             rect.setPosition(sf::Vector2f(offset_x + j * tile_width_in_pixels_, offset_y + i * tile_width_in_pixels_));
 
             if (char_map_[i][j] == '1') {
-                rect.setFillColor(sf::Color::White);
+                rect.setFillColor(sf::Color::Black);
             }
             else {
-                rect.setFillColor(sf::Color::Black);
+                rect.setFillColor(sf::Color::White);
             }
 
             window.draw(rect);

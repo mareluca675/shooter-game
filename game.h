@@ -27,6 +27,7 @@ private:
 
 	// Player 
 	Player player;
+	void spawnPlayer();
 	void handleKeyboardInput(sf::Keyboard::Key, bool);
 	void handleMouseInput(sf::Mouse::Button, bool);
 	bool isMovingUp = false;

@@ -14,11 +14,22 @@ public:
 	// Constructor
 	Player();
 
+	Player& operator=(const Player& other) {
+		if (this != &other) {
+			this->shape = other.shape;
+			this->center = other.center;
+			this->aimDir = other.aimDir;
+			this->aimDirNorm = other.aimDirNorm;
+		}
+
+		return *this;
+	}
+
 	// Getters
 	sf::CircleShape& getShape() { return shape; }
-	sf::Vector2f getCenter() { return center; }
-	sf::Vector2f getAimDir() { return aimDir; }
-	sf::Vector2f getAimDirNorm() { return aimDirNorm; }
+	sf::Vector2f getCenter() const { return sf::Vector2f(shape.getPosition().x + shape.getRadius(), shape.getPosition().y + shape.getRadius()); }
+	sf::Vector2f getAimDir() const { return aimDir; }
+	sf::Vector2f getAimDirNorm() const { return aimDirNorm; }
 	const float getPlayerSpeed() const { return PLAYER_SPEED; }
 
 	// Setters

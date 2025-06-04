@@ -24,16 +24,10 @@ void GameMap::ProcessMap(sf::RenderWindow& window) {
     SmoothMap(kNumIterationsSmooth);
     room_vector_ = GenerateRooms();
     ConnectRooms(room_vector_);
-
     // DrawRoomConnections(window);
     SmoothMap(kNumIterationsSmooth);
     CreatePassageways();
     RemoveConnectedComponents(room_vector_);
-
-    {
-        sf::Lock lock(generateMutex);
-        isGenerated = true;
-    }
 }
 
 void GameMap::Reset() {
@@ -160,6 +154,7 @@ std::vector<Room*> GameMap::GenerateRooms() {
             }
         }
     }
+
     return rooms;
 }
 
@@ -175,6 +170,7 @@ int GameMap::CountConnectedComponents(std::vector<Room*>& rooms) {
             }
         }
     }
+
     return cnt;
 }
 
@@ -191,6 +187,7 @@ std::vector<std::vector<std::pair<int, int> > > GameMap::GroupTilesIntoConnected
             }
         }
     }
+
     return res;
 }
 
@@ -312,12 +309,12 @@ void GameMap::CreatePassageways() {
             y1 += offset_y;
 
 			double a = 0, b = 0, c = 0;
-            if (fabs(x0 - x1) < kEpsilon) {//if the line is vertical, e.g. x = x0
+            if (fabs(x0 - x1) < kEpsilon) { // If the line is vertical, e.g. x = x0
                 a = 1;
                 b = 0;
                 c = -x0;
             }
-            else if (fabs(y0 - y1) < kEpsilon) {//if the line is vertical, e.g. x = x0
+            else if (fabs(y0 - y1) < kEpsilon) { // If the line is vertical, e.g. x = x0
                 a = 0;
                 b = 1;
                 c = -y0;
@@ -432,22 +429,22 @@ int GameMap::CountNeighborsDist(int i, int j, char c, int dist) {
     return cnt;
 }
 
-bool GameMap::isColliding(Player player) {
-    float playerX = player.getCenter().x + player.getShape().getRadius() - kOffsetX;
-    float playerY = player.getCenter().y + player.getShape().getRadius() - kOffsetY;
+bool GameMap::isColliding(Player& player) {
+    float playerX = player.getCenter().x - kOffsetX;
+    float playerY = player.getCenter().y - kOffsetY;
 
-    int startRow = std::max(0, static_cast<int>(std::floor(playerY / kTileWidthInPixels)));
-    int endRow = std::min(Height() - 1, static_cast<int>(std::floor(playerY / kTileWidthInPixels)));
-    int startCol = std::max(0, static_cast<int>(std::floor(playerX / kTileHeightInPixels)));
-    int endCol = std::min(Width() - 1, static_cast<int>(std::floor(playerX / kTileHeightInPixels)));
+    // Calculate the tile row and column based on the player's center
+    int row = static_cast<int>(playerY / kTileHeightInPixels);
+    int col = static_cast<int>(playerX / kTileWidthInPixels);
 
-    // Check each overlapping tile
-    for (int i = startRow; i <= endRow; ++i) {
-        for (int j = startCol; j <= endCol; ++j) {
-            if (char_map_[i][j] == '1') {
-                return true; // Collision with a wall
-            }
-        }
+    // Check if the row and column are within bounds
+    if (row < 0 || row >= Height() || col < 0 || col >= Width()) {
+        return true; // Out of bounds, consider as colliding
+    }
+
+    // Check if the tile at the player's center is a wall
+    if (char_map_[row][col] == '1') {
+        return true; // Collision with a wall
     }
 
     return false; // No collision

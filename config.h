@@ -15,8 +15,8 @@ constexpr int kMapHeightInPixels = kTileWidthInPixels * kMapHeightInTiles;
 constexpr int kOffsetX = (kScreenWidth - kMapWidthInPixels) / 2;
 constexpr int kOffsetY = (kScreenHeight - kMapHeightInPixels) / 2;
 constexpr int kNumIterationsSmooth = 10;
-constexpr double kEpsilon = 0.000001;
 constexpr int kMapFillPercentage = 48;
+constexpr double kEpsilon = 0.000001;
 const double kSqrt2 = std::sqrt(2);
 
 // If dead cell has number of neighbors that

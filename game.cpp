@@ -85,14 +85,14 @@ void Game::update(sf::Time deltaTime) {
 	// Check x movement
 	Player tempPlayerX = player;
 	tempPlayerX.getShape().move(movement.x, 0);
-	if (!gameMap->isColliding(tempPlayerX)) {
+	if (!gameMap->isCollidingPlayer(tempPlayerX)) {
 		player.getShape().move(movement.x, 0);
 	}
 
 	// Check y movement
 	Player tempPlayerY = player; // Use updated position after x movement
 	tempPlayerY.getShape().move(0, movement.y);
-	if (!gameMap->isColliding(tempPlayerY)) {
+	if (!gameMap->isCollidingPlayer(tempPlayerY)) {
 		player.getShape().move(0, movement.y);
 	}
 
@@ -117,8 +117,15 @@ void Game::update(sf::Time deltaTime) {
 										<< player.getAimDirNorm().y << std::endl;*/
 
 	// Process bullet movement
-	for (Bullet& bullet : bullets) {
-		bullet.getShape().move(bullet.getCurrVelocity() * deltaTime.asSeconds());
+	for (auto it = bullets.begin(); it != bullets.end();) {
+		it->getShape().move(it->getCurrVelocity() * deltaTime.asSeconds());
+		if (it->isOutOfBounds(window, player) || gameMap->isCollidingBullet(*it)) {
+			it = bullets.erase(it);
+			std::cout << "Bullet destroyed.\n";
+		}
+		else {
+			++it;
+		}
 	}
 }
 
@@ -145,7 +152,7 @@ void Game::spawnPlayer() {
 	player.setCenter(sf::Vector2f(0.0f, 0.0f));
 	player.getShape().setPosition(sf::Vector2f(0.0f, 0.0f));
 
-	while (gameMap->isColliding(player)) {
+	while (gameMap->isCollidingPlayer(player)) {
 		sf::Vector2f position;
 		position.x = Rng::IntInRange(0, 10000);
 		position.y = Rng::IntInRange(0, 10000);

@@ -429,7 +429,28 @@ int GameMap::CountNeighborsDist(int i, int j, char c, int dist) {
     return cnt;
 }
 
-bool GameMap::isColliding(Player& player) {
+bool GameMap::isCollidingBullet(Bullet& bullet) {
+    float playerX = bullet.getCenter().x - kOffsetX;
+    float playerY = bullet.getCenter().y - kOffsetY;
+
+    // Calculate the tile row and column based on the player's center
+    int row = static_cast<int>(playerY / kTileHeightInPixels);
+    int col = static_cast<int>(playerX / kTileWidthInPixels);
+
+    // Check if the row and column are within bounds
+    if (row < 0 || row >= Height() || col < 0 || col >= Width()) {
+        return true; // Out of bounds, consider as colliding
+    }
+
+    // Check if the tile at the player's center is a wall
+    if (char_map_[row][col] == '1') {
+        return true; // Collision with a wall
+    }
+
+    return false; // No collision
+}
+
+bool GameMap::isCollidingPlayer(Player& player) {
     float playerX = player.getCenter().x - kOffsetX;
     float playerY = player.getCenter().y - kOffsetY;
 

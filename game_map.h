@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "player.h"
+#include "bullet.h"
 #include <vector>
 
 class Room;
@@ -17,7 +18,8 @@ public:
     int tile_width_in_pixels_ = 0;
     int tile_height_in_pixels_ = 0;
     std::vector<Room*> room_vector_;
-    bool isColliding(Player&);
+    bool isCollidingPlayer(Player&);
+    bool isCollidingBullet(Bullet&);
 public:
     GameMap(int width, int height, int map_fill_percentage,
         int tile_width_in_pixels, int tile_height_in_pixels,

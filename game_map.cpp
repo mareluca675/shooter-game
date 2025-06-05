@@ -116,9 +116,9 @@ void GameMap::DrawMap(sf::RenderWindow& window, Player& player, double offset_x,
     float bottom_edge = top_edge + window.getSize().y;
 
     // Calculate visible tile range, accounting for offsets
-    int start_x = static_cast<int>(ceil((left_edge - offset_x) / tile_width_in_pixels_));
+    int start_x = static_cast<int>(floor((left_edge - offset_x) / tile_width_in_pixels_)) - 1;
     int end_x = static_cast<int>(ceil((right_edge - offset_x) / tile_width_in_pixels_));
-    int start_y = static_cast<int>(ceil((top_edge - offset_y) / tile_height_in_pixels_));
+    int start_y = static_cast<int>(floor((top_edge - offset_y) / tile_height_in_pixels_)) - 1;
     int end_y = static_cast<int>(ceil((bottom_edge - offset_y) / tile_height_in_pixels_));
 
     // Draw tiles

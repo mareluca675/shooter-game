@@ -108,18 +108,33 @@ void GameMap::SmoothMap(int num_iterations) {
     }
 }
 
-void GameMap::DrawMap(sf::RenderWindow& window, double offset_x, double offset_y) {
-    for (int i = 0; i < Height(); ++i) {
-        for (int j = 0; j < Width(); ++j) {
-            sf::RectangleShape rect;
-            rect.setSize(sf::Vector2f(tile_width_in_pixels_, tile_width_in_pixels_));
-            rect.setPosition(sf::Vector2f(offset_x + j * tile_width_in_pixels_, offset_y + i * tile_width_in_pixels_));
+void GameMap::DrawMap(sf::RenderWindow& window, Player& player, double offset_x, double offset_y) {
+    // Calculate view edges
+    float left_edge = player.getCenter().x - window.getSize().x / 2.f;
+    float top_edge = player.getCenter().y - window.getSize().y / 2.f;
+    float right_edge = left_edge + window.getSize().x;
+    float bottom_edge = top_edge + window.getSize().y;
 
-            if (char_map_[i][j] == '1') {
-                rect.setFillColor(sf::Color::Black);
+    // Calculate visible tile range, accounting for offsets
+    int start_x = static_cast<int>(ceil((left_edge - offset_x) / tile_width_in_pixels_));
+    int end_x = static_cast<int>(ceil((right_edge - offset_x) / tile_width_in_pixels_));
+    int start_y = static_cast<int>(ceil((top_edge - offset_y) / tile_height_in_pixels_));
+    int end_y = static_cast<int>(ceil((bottom_edge - offset_y) / tile_height_in_pixels_));
+
+    // Draw tiles
+    for (int i = start_x; i <= end_x; ++i) {
+        for (int j = start_y; j <= end_y; ++j) {
+            sf::RectangleShape rect(sf::Vector2f(tile_width_in_pixels_, tile_height_in_pixels_));
+            rect.setPosition(sf::Vector2f(offset_x + i * tile_width_in_pixels_, offset_y + j * tile_height_in_pixels_));
+
+            if (i < 0 || j < 0 || i >= Width() || j >= Height()) {
+                rect.setFillColor(sf::Color::Black); // Out of bounds
+            }
+            else if (char_map_[j][i] == '1') {
+                rect.setFillColor(sf::Color::Black); // Wall
             }
             else {
-                rect.setFillColor(sf::Color::White);
+                rect.setFillColor(sf::Color::White); // Open space
             }
 
             window.draw(rect);
@@ -437,13 +452,9 @@ bool GameMap::isCollidingBullet(Bullet& bullet) {
     int row = static_cast<int>(playerY / kTileHeightInPixels);
     int col = static_cast<int>(playerX / kTileWidthInPixels);
 
-    // Check if the row and column are within bounds
-    if (row < 0 || row >= Height() || col < 0 || col >= Width()) {
-        return true; // Out of bounds, consider as colliding
-    }
-
     // Check if the tile at the player's center is a wall
     if (char_map_[row][col] == '1') {
+        std::cout << "Bullet hit wall.\n";
         return true; // Collision with a wall
     }
 

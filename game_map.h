@@ -30,7 +30,7 @@ public:
     bool IsOnBoundary(int i, int j);
     int CountNeighborWalls(int i, int j);
     void SmoothMap(int num_iterations);
-    void DrawMap(sf::RenderWindow& window, double offset_x, double offset_y);
+    void DrawMap(sf::RenderWindow&, Player&, double, double);
     int Width();
     int Height();
     std::vector<Room*> GenerateRooms();

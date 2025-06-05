@@ -96,7 +96,7 @@ void Game::update(sf::Time deltaTime) {
 		player.getShape().move(0, movement.y);
 	}
 
-	//std::cout << player.getShape().getPosition().x << ' ' << player.getShape().getPosition().y << '\n';
+	std::cout << "Player at position: " << player.getShape().getPosition().x << ' ' << player.getShape().getPosition().y << '\n';
 
 	// Player shooting logic
 
@@ -121,7 +121,6 @@ void Game::update(sf::Time deltaTime) {
 		it->getShape().move(it->getCurrVelocity() * deltaTime.asSeconds());
 		if (it->isOutOfBounds(window, player) || gameMap->isCollidingBullet(*it)) {
 			it = bullets.erase(it);
-			std::cout << "Bullet destroyed.\n";
 		}
 		else {
 			++it;
@@ -136,7 +135,7 @@ void Game::render() {
 	window.setView(cameraView);
 
 	// Game map rendering
-	gameMap->DrawMap(window, kOffsetX, kOffsetY);
+	gameMap->DrawMap(window, player, kOffsetX, kOffsetY);
 
 	// Player rendering
 	window.draw(player.getShape());

@@ -31,6 +31,15 @@
     <Filter Include="Source Files\Raycast">
       <UniqueIdentifier>{347cf6af-b2f1-4359-aeec-71c833ace9c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Resources">
+      <UniqueIdentifier>{ea4706f0-67c1-43e8-8ffe-870adac19bc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resources\Resource Holder">
+      <UniqueIdentifier>{8785180f-43ec-4bdb-a08d-5b636c715eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resources\Textures">
+      <UniqueIdentifier>{eedac5d1-8310-4b99-9a9a-c7fa605b6441}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game_map.cpp">
@@ -62,9 +71,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="config.h">
-      <Filter>Header Files\Game Map</Filter>
-    </ClInclude>
     <ClInclude Include="rng.h">
       <Filter>Header Files\Game Map</Filter>
     </ClInclude>
@@ -89,5 +95,19 @@
     <ClInclude Include="ray.h">
       <Filter>Header Files\Raycast</Filter>
     </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files\Main Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="resource_holder.hpp">
+      <Filter>Header Files\Resources\Resource Holder</Filter>
+    </ClInclude>
+    <ClInclude Include="texture_holders.h">
+      <Filter>Header Files\Resources\Textures</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource_holder.inl">
+      <Filter>Header Files\Resources\Resource Holder</Filter>
+    </None>
   </ItemGroup>
 </Project>

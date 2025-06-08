@@ -2,9 +2,9 @@
 #include <iostream>
 
 Bullet::Bullet() {
-	this->shape.setRadius(10.0f);
-	this->shape.setFillColor(sf::Color::Red);
+	shape.setRadius(5.0f);
 	currVelocity = sf::Vector2f(0.0f, 0.0f);
+	sprite.setScale(sf::Vector2f(0.1f, 0.1f));
 }
 
 bool Bullet::isOutOfBounds(sf::RenderWindow &window, Player &player) {

@@ -156,9 +156,14 @@
     <ClInclude Include="game_map.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="ray.h" />
+    <ClInclude Include="resource_holder.hpp" />
     <ClInclude Include="rng.h" />
     <ClInclude Include="room.h" />
+    <ClInclude Include="texture_holders.h" />
     <ClInclude Include="util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource_holder.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

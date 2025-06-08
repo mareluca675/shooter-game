@@ -6,6 +6,7 @@
 
 // Raycast
 constexpr auto TWO_PI = 3.14159265358979f * 2;
+constexpr auto PI = 3.14159265358979f;
 
 // Map
 constexpr int kScreenWidth = 1980;

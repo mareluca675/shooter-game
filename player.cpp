@@ -2,7 +2,6 @@
 #include <SFML/Graphics.hpp>
 
 Player::Player() {
-	shape.setRadius(50.f);
-	shape.setPosition(160.0f, 40.0f);
-	shape.setFillColor(sf::Color::Green);
+	shape.setSize(sf::Vector2f(200.0f, 100.0f));
+	sprite.setScale(sf::Vector2f(0.5f, 0.5f));
 }

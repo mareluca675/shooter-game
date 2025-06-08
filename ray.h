@@ -3,6 +3,8 @@
 
 #include <SFML\Graphics.hpp>
 #include "player.h"
+#include "config.h"
+#include "game_map.h"
 
 class Ray {
 private:
@@ -10,7 +12,7 @@ private:
 public:
 	Ray() = default;
 	Ray(float x, float y);
-	void calcHit(Player&, sf::Vector2f, sf::Vector2f);
+	void calcHit(Player&, sf::RenderWindow&, GameMap&);
 	void reset(Player&);
 	sf::Vector2f end;
 };

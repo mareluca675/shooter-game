@@ -15,25 +15,23 @@ void Ray::reset(Player& player) {
 // Calculates intersection-point two lines
 // Used for getting intersection between ray and wall
 // More or less black-box code
-void Ray::calcHit(Player& player, sf::Vector2f p3, sf::Vector2f p4) {
-	const sf::Vector2f p1 = player.getCenter();
-	const sf::Vector2f p2 = end;
+void Ray::calcHit(Player& player, sf::RenderWindow &window, GameMap& map) {
+	// Calculate view edges
+    float left_edge = player.getCenter().x - window.getSize().x / 2.f;
+    float top_edge = player.getCenter().y - window.getSize().y / 2.f;
+    float right_edge = left_edge + window.getSize().x;
+    float bottom_edge = top_edge + window.getSize().y;
 
-	// Calculates denominator of equations
-	const float den = (p1.x - p2.x) * (p3.y - p4.y) - (p1.y - p2.y) * (p3.x - p4.x);
+    // Calculate visible tile range, accounting for offsets
+    int start_x = static_cast<int>(floor((left_edge - kOffsetX) / kTileWidthInPixels)) - 1;
+    int end_x = static_cast<int>(ceil((right_edge - kOffsetX) / kTileWidthInPixels));
+    int start_y = static_cast<int>(floor((top_edge - kOffsetY) / kTileHeightInPixels)) - 1;
+    int end_y = static_cast<int>(ceil((bottom_edge - kOffsetY) / kTileHeightInPixels));
 
-	// Lines are paralel
-	if (den == 0) {
-		return;
-	}
-
-	const float t = ((p1.x - p3.x) * (p3.y - p4.y) - (p1.y - p3.y) * (p3.x - p4.x)) / den;
-	const float u = -((p1.x - p2.x) * (p1.y - p3.y) - (p1.y - p2.y) * (p1.x - p3.x)) / den;
-
-	// If there's an intersection...
-	if (t > 0 && t < 1 && u > 0 && u < 1) {
-		// Gets intersection point
-		end.x = p1.x + t * (p2.x - p1.x);
-		end.y = p1.y + t * (p2.y - p1.y);
-	}
+    // Draw tiles
+    for (int i = start_x; i <= end_x; ++i) {
+        for (int j = start_y; j <= end_y; ++j) {
+            
+        }
+    }
 }

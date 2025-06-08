@@ -9,6 +9,7 @@ Game::Game() {
                           kTileHeightInPixels, window);  
 	cameraView.reset(sf::FloatRect(0, 0, static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y)));
 	textureHolder.load(Textures::Bullet, "assets/textures/bullet.png");
+	textureHolder.load(Textures::Player, "assets/textures/player.png");
 }
 
 void Game::addBullet() {
@@ -171,20 +172,12 @@ void Game::render() {
 void Game::spawnPlayer() {
 	player.getShape().setPosition(player.getCenter());
 	player.getSprite().setPosition(sf::Vector2f(0.0f, 0.0f));
-	sf::Texture* texture = new sf::Texture;
-	if (!texture->loadFromFile("assets/textures/player.png")) {
-		return;
-	}
-
-	texture->setSmooth(true);
-	player.getSprite().setTexture(*texture);
+	player.getSprite().setTexture(textureHolder.get(Textures::Player));
 
 	while (gameMap->isCollidingPlayer(player)) {
-		sf::Vector2f position;
-		position.x = Rng::IntInRange(0, 10000);
-		position.y = Rng::IntInRange(0, 10000);
+		sf::Vector2f position(Rng::IntInRange(0, 10000), Rng::IntInRange(0, 10000));
 		player.getShape().setPosition(position);
-		player.getShape().setPosition(player.getCenter());
+		player.getSprite().setPosition(position);
 		std::cout << "Respawned at " << position.x << ' ' << position.y << '\n';
 	}
 }

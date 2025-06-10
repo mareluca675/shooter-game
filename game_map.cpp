@@ -452,9 +452,8 @@ bool GameMap::isCollidingBullet(Bullet& bullet) {
     int row = static_cast<int>(playerY / kTileHeightInPixels);
     int col = static_cast<int>(playerX / kTileWidthInPixels);
 
-    // Check if the tile at the player's center is a wall
+    // Check if the tile at the bullet's center is a wall
     if (char_map_[row][col] == '1') {
-        std::cout << "Bullet hit wall.\n";
         return true; // Collision with a wall
     }
 

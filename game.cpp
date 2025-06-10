@@ -14,11 +14,11 @@ Game::Game() {
 
 void Game::addBullet() {
 	Bullet bullet;
-	bullet.getShape().setPosition(player.getCenter());
 	bullet.getSprite().setPosition(player.getCenter());
 	bullet.getSprite().setTexture(textureHolder.get(Textures::Bullet));
 	bullet.setCurrVelocity(player.getAimDirNorm() * bullet.getSpeed());
-	bullet.getSprite().setRotation(mouseAngle + 90.0f);
+	bullet.getSprite().setRotation(mouseAngle);
+	bullet.initialPos = player.getCenter();
 	bullets.push_back(bullet);
 }
 
@@ -77,62 +77,45 @@ void Game::update(sf::Time deltaTime) {
 
 	// Calculate magnitude
 	float magnitude = sqrt(direction.x * direction.x + direction.y * direction.y);
-	if (magnitude) {
-		direction /= magnitude;
-	}
+	if (magnitude) { direction /= magnitude; }
+
+	// Process player rotation
+	sf::Vector2f mousePosition = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+
+	double x = mousePosition.x - player.getSprite().getPosition().x;
+	double y = mousePosition.y - player.getSprite().getPosition().y;
+	mouseAngle = atan2(y, x) / PI * 180;
+	if (mouseAngle < 0) mouseAngle += 360;
+	player.getSprite().setRotation(mouseAngle);
 
 	// Process player movement
-
-	// Rotation
-	sf::Vector2f mousePosition = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-    mouseAngle = (-atan2(mousePosition.x - player.getSprite().getPosition().x,
-					     mousePosition.y - player.getSprite().getPosition().y)) * 180.0f / PI;
-
-	Player tempPlayerRotation = player;
-	tempPlayerRotation.getShape().setRotation(mouseAngle + 90.0f);
-
-	if (!gameMap->isCollidingPlayer(tempPlayerRotation)) {
-		player.getShape().setRotation(mouseAngle + 90.0f);
-		player.getSprite().setRotation(mouseAngle + 90.0f);
-	}
-
 	sf::Vector2f movement = direction * player.getPlayerSpeed() * deltaTime.asSeconds();
 
 	// Check x movement
 	Player tempPlayerX = player;
 	tempPlayerX.getSprite().move(movement.x, 0);
-	tempPlayerX.getShape().move(movement.x, 0);
 	if (!gameMap->isCollidingPlayer(tempPlayerX)) {
 		player.getSprite().move(movement.x, 0);
-		player.getShape().move(movement.x, 0);
 	}
 
 	// Check y movement
 	Player tempPlayerY = player;
 	tempPlayerY.getSprite().move(0, movement.y);
-	tempPlayerY.getShape().move(0, movement.y);
 	if (!gameMap->isCollidingPlayer(tempPlayerY)) {
 		player.getSprite().move(0, movement.y);
-		player.getShape().move(0, movement.y);
 	}
 	
-	//std::cout << "Player at position: " << player.getShape().getPosition().x << ' ' << player.getShape().getPosition().y << '\n';
-
 	// Player shooting logic
 
 	// Update camera view to follow the player	
-	cameraView.setCenter(player.getCenter());
+	cameraView.setCenter(player.getSprite().getPosition());
 
 	// Set player center and aim direction
-	sf::Vector2f mouseWorldPos = window.mapPixelToCoords(sf::Mouse::getPosition(window), cameraView);
-	player.setAimDir(mouseWorldPos - player.getCenter());
+	player.setAimDir(mousePosition - player.getSprite().getPosition());
 
 	// N(V) = V / |V|
 	player.setAimDirNorm(player.getAimDir() / sqrt(player.getAimDir().x * player.getAimDir().x
 					   + player.getAimDir().y * player.getAimDir().y));
-
-	/*std::cout << "Aim dir normalized: " << player.getAimDirNorm().x << ", "
-										<< player.getAimDirNorm().y << std::endl;*/
 
 	// Process bullet movement
 	for (auto it = bullets.begin(); it != bullets.end();) {
@@ -140,7 +123,6 @@ void Game::update(sf::Time deltaTime) {
 			it = bullets.erase(it);
 		}
 		else {
-			it->getShape().move(it->getCurrVelocity() * deltaTime.asSeconds());
 			it->getSprite().move(it->getCurrVelocity() * deltaTime.asSeconds());
 			++it;
 		}
@@ -148,7 +130,7 @@ void Game::update(sf::Time deltaTime) {
 }
 
 void Game::render() {
-	window.clear(sf::Color::Black);
+	window.clear();
 
 	// Adjusting camera view
 	window.setView(cameraView);
@@ -161,24 +143,21 @@ void Game::render() {
 
 	// Bullets rendering
 	for (Bullet& bullet : bullets) {
-		/*bullet.getShape().setFillColor(sf::Color::Red);
-		window.draw(bullet.getShape());*/
 		window.draw(bullet.getSprite());
 	}
 
 	window.display();
 }
 
-void Game::spawnPlayer() {
-	player.getShape().setPosition(player.getCenter());
-	player.getSprite().setPosition(sf::Vector2f(0.0f, 0.0f));
+void Game::spawnPlayer() {	
 	player.getSprite().setTexture(textureHolder.get(Textures::Player));
+	player.getSprite().setPosition(sf::Vector2f(0.0f, 0.0f));
+	player.getSprite().setOrigin(textureHolder.get(Textures::Player).getSize().x / 2.0f,
+								 textureHolder.get(Textures::Player).getSize().y / 2.0f);
 
 	while (gameMap->isCollidingPlayer(player)) {
-		sf::Vector2f position(Rng::IntInRange(0, 10000), Rng::IntInRange(0, 10000));
-		player.getShape().setPosition(position);
+		sf::Vector2f position(Rng::IntInRange(0, kTileWidthInPixels * kMapWidthInTiles), Rng::IntInRange(0, kTileHeightInPixels * kMapHeightInTiles));
 		player.getSprite().setPosition(position);
-		std::cout << "Respawned at " << position.x << ' ' << position.y << '\n';
 	}
 }
 

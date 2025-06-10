@@ -1,10 +1,11 @@
 #include <SFML/Graphics.hpp>
+#include "resource_identifiers.h"
 #include "player.h"
 #include "bullet.h"
 #include "game_map.h"
 #include "config.h"
 #include "rng.h"
-#include "texture_holders.h"
+
 
 #ifndef GAME_H
 #define GAME_H

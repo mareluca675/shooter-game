@@ -6,7 +6,6 @@
 class Player {
 private:
 	sf::Sprite sprite;
-	sf::RectangleShape shape;
 	sf::Vector2f aimDir;
 	sf::Vector2f aimDirNorm;
 	const float PLAYER_SPEED = 250.0f;
@@ -16,7 +15,7 @@ public:
 
 	Player& operator=(const Player& other) {
 		if (this != &other) {
-			this->shape = other.shape;
+			this->sprite = other.sprite;
 			this->aimDir = other.aimDir;
 			this->aimDirNorm = other.aimDirNorm;
 		}
@@ -25,9 +24,9 @@ public:
 	}
 
 	// Getters
-	sf::RectangleShape& getShape() { return shape; }
 	sf::Sprite& getSprite() { return sprite; }
-	sf::Vector2f getCenter() const { return sf::Vector2f(shape.getPosition().x + shape.getSize().x / 2, shape.getPosition().y + shape.getSize().y / 2); }
+	sf::Vector2f getCenter() const { return sf::Vector2f(sprite.getPosition().x, 
+														 sprite.getPosition().y); }
 	sf::Vector2f getAimDir() const { return aimDir; }
 	sf::Vector2f getAimDirNorm() const { return aimDirNorm; }
 	const float getPlayerSpeed() const { return PLAYER_SPEED; }

@@ -159,7 +159,7 @@
     <ClInclude Include="resource_holder.hpp" />
     <ClInclude Include="rng.h" />
     <ClInclude Include="room.h" />
-    <ClInclude Include="texture_holders.h" />
+    <ClInclude Include="resource_identifiers.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>

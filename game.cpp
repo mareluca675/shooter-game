@@ -15,7 +15,7 @@ Game::Game() {
 void Game::addBullet() {
 	Bullet bullet;
 	candle::RadialLight light;
-	light.setRange(500);
+	light.setRange(200);
 	bullet.getSprite().setPosition(player.getCenter());
 	bullet.getSprite().setTexture(textureHolder.get(Textures::Bullet));
 	bullet.setCurrVelocity(player.getAimDirNorm() * bullet.getSpeed());
@@ -183,7 +183,7 @@ void Game::run() {
 	spawnPlayer();
 
 	// Light settings
-	playerLight.setRange(400);
+	playerLight.setRange(800);
 
 	while (window.isOpen()) {
 		processEvents();

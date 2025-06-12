@@ -34,6 +34,9 @@
     <Filter Include="Header Files\Resource Holder">
       <UniqueIdentifier>{8785180f-43ec-4bdb-a08d-5b636c715eb0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Candle">
+      <UniqueIdentifier>{98f5a6c2-d632-4c28-8944-e36f5b38e147}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game_map.cpp">
@@ -62,6 +65,33 @@
     </ClCompile>
     <ClCompile Include="ray.cpp">
       <Filter>Source Files\Raycast</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="Constants.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectedLight.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="LightingArea.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSource.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="Polygon.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="RadialLight.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexArray.cpp">
+      <Filter>Source Files\Candle</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include <Candle/Candle.hpp>
 #include "resource_identifiers.h"
 #include "player.h"
 #include "bullet.h"
@@ -25,6 +26,10 @@ private:
 	// Window
 	sf::RenderWindow window;
 
+	// Light source
+	candle::RadialLight playerLight;
+	candle::EdgeVector edges;
+
 	// Camera
 	sf::View cameraView;
 	
@@ -43,7 +48,7 @@ private:
 	float mouseAngle = 0.0f;
 
 	// Bullets
-	std::vector<Bullet> bullets;
+	std::vector<std::pair<Bullet, candle::RadialLight>> bullets;
 	void addBullet();
 
 	// Time per frame

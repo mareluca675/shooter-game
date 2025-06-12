@@ -2,6 +2,7 @@
 #define GAME_MAP_H
 
 #include <SFML/Graphics.hpp>
+#include <Candle/Candle.hpp>
 #include "player.h"
 #include "bullet.h"
 #include <vector>
@@ -30,7 +31,7 @@ public:
     bool IsOnBoundary(int i, int j);
     int CountNeighborWalls(int i, int j);
     void SmoothMap(int num_iterations);
-    void DrawMap(sf::RenderWindow&, Player&, double, double);
+    void DrawMap(sf::RenderWindow&, Player&, double, double, candle::EdgeVector&);
     int Width();
     int Height();
     std::vector<Room*> GenerateRooms();

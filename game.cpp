@@ -14,12 +14,14 @@ Game::Game() {
 
 void Game::addBullet() {
 	Bullet bullet;
+	candle::RadialLight light;
+	light.setRange(500);
 	bullet.getSprite().setPosition(player.getCenter());
 	bullet.getSprite().setTexture(textureHolder.get(Textures::Bullet));
 	bullet.setCurrVelocity(player.getAimDirNorm() * bullet.getSpeed());
 	bullet.getSprite().setRotation(mouseAngle);
 	bullet.initialPos = player.getCenter();
-	bullets.push_back(bullet);
+	bullets.push_back( { bullet, light } );
 }
 
 void Game::handleMouseInput(sf::Mouse::Button button, bool isPressed = true) {
@@ -119,14 +121,20 @@ void Game::update(sf::Time deltaTime) {
 
 	// Process bullet movement
 	for (auto it = bullets.begin(); it != bullets.end();) {
-		if (it->isOutOfBounds(window, player) || gameMap->isCollidingBullet(*it)) {
+		if (it->first.isOutOfBounds(window, player) || gameMap->isCollidingBullet(it->first)) {
 			it = bullets.erase(it);
 		}
 		else {
-			it->getSprite().move(it->getCurrVelocity() * deltaTime.asSeconds());
+			it->first.getSprite().move(it->first.getCurrVelocity() * deltaTime.asSeconds());
+			it->second.setPosition(it->first.getSprite().getPosition());
+			it->second.castLight(edges.begin(), edges.end());
 			++it;
 		}
 	}
+
+	// Render light
+	playerLight.setPosition(player.getSprite().getPosition());
+	playerLight.castLight(edges.begin(), edges.end());
 }
 
 void Game::render() {
@@ -136,14 +144,18 @@ void Game::render() {
 	window.setView(cameraView);
 
 	// Game map rendering
-	gameMap->DrawMap(window, player, kOffsetX, kOffsetY);
+	gameMap->DrawMap(window, player, kOffsetX, kOffsetY, edges);
+
+	// Light rendering
+	window.draw(playerLight);
 
 	// Player rendering
 	window.draw(player.getSprite());
 
 	// Bullets rendering
-	for (Bullet& bullet : bullets) {
-		window.draw(bullet.getSprite());
+	for (auto& bullet : bullets) {
+		window.draw(bullet.second);
+		window.draw(bullet.first.getSprite());
 	}
 
 	window.display();
@@ -162,10 +174,16 @@ void Game::spawnPlayer() {
 }
 
 void Game::run() {
+	// Delta time
 	sf::Clock clock;
 	sf::Time timeSinceLastUpdate = sf::Time::Zero;
+
+	// Map and player spawn / generate
 	gameMap->ProcessMap(window);
 	spawnPlayer();
+
+	// Light settings
+	playerLight.setRange(400);
 
 	while (window.isOpen()) {
 		processEvents();

@@ -27,8 +27,7 @@ public:
 	// Getters
 	sf::Sprite& getSprite() { return sprite; }
 	sf::Vector2f getCurrVelocity() const { return currVelocity; }
-	sf::Vector2f getCenter() const { return sf::Vector2f(sprite.getTexture()->getSize().x / 2.0f + sprite.getPosition().x,
-														 sprite.getTexture()->getSize().y / 2.0f + sprite.getPosition().y); }
+	sf::Vector2f getCenter() const { return sf::Vector2f(sprite.getPosition().x, sprite.getPosition().y); }
 	const float getSpeed() const { return SPEED; }
 	
 	// Setters

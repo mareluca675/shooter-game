@@ -108,10 +108,47 @@ void GameMap::SmoothMap(int num_iterations) {
     }
 }
 
-void GameMap::DrawMap(sf::RenderWindow& window, Player& player, double offset_x, double offset_y) {
+//void GameMap::DrawMap(sf::RenderWindow& window, Player& player, double offset_x, double offset_y, candle::EdgeVector& edges) {
+//    // Calculate view edges
+//    float left_edge = player.getCenter().x - window.getSize().x / 2.f;
+//    float top_edge = player.getCenter().y - window.getSize().y / 2.f;
+//    float right_edge = left_edge + window.getSize().x;
+//    float bottom_edge = top_edge + window.getSize().y;
+//
+//    // Calculate visible tile range, accounting for offsets
+//    int start_x = static_cast<int>(floor((left_edge - offset_x) / tile_width_in_pixels_)) - 1;
+//    int end_x = static_cast<int>(ceil((right_edge - offset_x) / tile_width_in_pixels_));
+//    int start_y = static_cast<int>(floor((top_edge - offset_y) / tile_height_in_pixels_)) - 1;
+//    int end_y = static_cast<int>(ceil((bottom_edge - offset_y) / tile_height_in_pixels_));
+//
+//    // Draw tiles
+//    for (int i = start_x; i <= end_x; ++i) {
+//        for (int j = start_y; j <= end_y; ++j) {
+//            sf::RectangleShape rect(sf::Vector2f(tile_width_in_pixels_, tile_height_in_pixels_));
+//            rect.setPosition(sf::Vector2f(offset_x + i * tile_width_in_pixels_, offset_y + j * tile_height_in_pixels_));
+//
+//            if (i < 0 || j < 0 || i >= Width() || j >= Height()) {
+//                rect.setFillColor(sf::Color::Black); // Out of bounds
+//            }
+//            else if (char_map_[j][i] == '1') {
+//                rect.setFillColor(sf::Color::Black); // Wall
+//            }
+//            else {
+//                rect.setFillColor(sf::Color::White); // Open space
+//            }
+//
+//            window.draw(rect);
+//        }
+//    }
+//}
+
+void GameMap::DrawMap(sf::RenderWindow& window, Player& player, double offset_x, double offset_y, candle::EdgeVector& edges) {
+    // Reset edges vector
+    edges.clear();
+
     // Calculate view edges
-    float left_edge = player.getCenter().x - window.getSize().x / 2.f;
-    float top_edge = player.getCenter().y - window.getSize().y / 2.f;
+    float left_edge = player.getCenter().x - window.getSize().x / 2.0f;
+    float top_edge = player.getCenter().y - window.getSize().y / 2.0f;
     float right_edge = left_edge + window.getSize().x;
     float bottom_edge = top_edge + window.getSize().y;
 
@@ -121,23 +158,74 @@ void GameMap::DrawMap(sf::RenderWindow& window, Player& player, double offset_x,
     int start_y = static_cast<int>(floor((top_edge - offset_y) / tile_height_in_pixels_)) - 1;
     int end_y = static_cast<int>(ceil((bottom_edge - offset_y) / tile_height_in_pixels_));
 
-    // Draw tiles
+    // Helper function to check if a tile is a wall
+    auto isWall = [&](int x, int y) -> bool {
+        if (x < 0 || y < 0 || x >= Width() || y >= Height()) {
+            return true; // Out of bounds treated as walls
+        }
+        return char_map_[y][x] == '1';
+        };
+
+    // Draw tiles first
     for (int i = start_x; i <= end_x; ++i) {
         for (int j = start_y; j <= end_y; ++j) {
             sf::RectangleShape rect(sf::Vector2f(tile_width_in_pixels_, tile_height_in_pixels_));
-            rect.setPosition(sf::Vector2f(offset_x + i * tile_width_in_pixels_, offset_y + j * tile_height_in_pixels_));
+            float tile_left = offset_x + i * tile_width_in_pixels_;
+            float tile_top = offset_y + j * tile_height_in_pixels_;
+            rect.setPosition(sf::Vector2f(tile_left, tile_top));
 
-            if (i < 0 || j < 0 || i >= Width() || j >= Height()) {
-                rect.setFillColor(sf::Color::Black); // Out of bounds
-            }
-            else if (char_map_[j][i] == '1') {
+            if (isWall(i, j)) {
                 rect.setFillColor(sf::Color::Black); // Wall
             }
             else {
-                rect.setFillColor(sf::Color::White); // Open space
+                rect.setFillColor(sf::Color::Transparent); // Open space
             }
 
             window.draw(rect);
+        }
+    }
+
+    // Generate edges only for boundaries between walls and open spaces
+    // We need a slightly larger range for edge detection to catch boundaries at view edges
+    int edge_start_x = start_x - 1;
+    int edge_end_x = end_x + 1;
+    int edge_start_y = start_y - 1;
+    int edge_end_y = end_y + 1;
+
+    for (int i = edge_start_x; i <= edge_end_x; ++i) {
+        for (int j = edge_start_y; j <= edge_end_y; ++j) {
+            if (!isWall(i, j)) continue; // Only process wall tiles
+
+            float tile_left = offset_x + i * tile_width_in_pixels_;
+            float tile_top = offset_y + j * tile_height_in_pixels_;
+            float tile_right = tile_left + tile_width_in_pixels_;
+            float tile_bottom = tile_top + tile_height_in_pixels_;
+
+            // Check each side of the wall tile and add edge if it borders open space
+
+            // Left edge: if tile to the left is open space
+            if (!isWall(i - 1, j)) {
+                edges.emplace_back(sf::Vector2f(tile_left, tile_top),
+                    sf::Vector2f(tile_left, tile_bottom));
+            }
+
+            // Right edge: if tile to the right is open space
+            if (!isWall(i + 1, j)) {
+                edges.emplace_back(sf::Vector2f(tile_right, tile_top),
+                    sf::Vector2f(tile_right, tile_bottom));
+            }
+
+            // Top edge: if tile above is open space
+            if (!isWall(i, j - 1)) {
+                edges.emplace_back(sf::Vector2f(tile_left, tile_top),
+                    sf::Vector2f(tile_right, tile_top));
+            }
+
+            // Bottom edge: if tile below is open space
+            if (!isWall(i, j + 1)) {
+                edges.emplace_back(sf::Vector2f(tile_left, tile_bottom),
+                    sf::Vector2f(tile_right, tile_bottom));
+            }
         }
     }
 }

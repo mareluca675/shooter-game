@@ -9,123 +9,125 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{a9aeed95-e3f1-4b95-bfac-4ee779930c66}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Game Map">
-      <UniqueIdentifier>{1f44ca50-732b-4074-ae43-7c8c8b32d796}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Game Map">
-      <UniqueIdentifier>{ee48e5fd-14fa-4952-8bec-cc58ba28245b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Main Stuff">
-      <UniqueIdentifier>{c2330ff9-3a16-413e-8de3-ce34f2f10d68}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Main Stuff">
-      <UniqueIdentifier>{f2c1c982-66e5-4a58-8665-114a6ef467b1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Resource Holder">
-      <UniqueIdentifier>{8785180f-43ec-4bdb-a08d-5b636c715eb0}</UniqueIdentifier>
+    <Filter Include="Header Files\Main">
+      <UniqueIdentifier>{7aa44be1-b92c-470b-ae50-50794a17c70c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Candle">
-      <UniqueIdentifier>{98f5a6c2-d632-4c28-8944-e36f5b38e147}</UniqueIdentifier>
+      <UniqueIdentifier>{62ecd8a1-7db4-41d7-ab3c-6d05f35e57ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Map">
+      <UniqueIdentifier>{23d391bd-6327-4ce2-94b7-e502ef97747f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game Map">
+      <UniqueIdentifier>{7cfa0174-a178-45e3-bc34-0295ee6078ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resource Holder">
+      <UniqueIdentifier>{e84b6bda-71e5-41c7-a041-43c831162ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resource Holder\Template">
+      <UniqueIdentifier>{f6d91b6a-dad5-474f-860a-fc1f64b9a887}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="game_map.cpp">
+    <ClCompile Include="main\player.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\bullet.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\game.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\item.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\main.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="candle\Color.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="candle\Constants.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="candle\DirectedLight.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="candle\LightingArea.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="candle\LightSource.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="candle\Line.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="candle\Polygon.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="candle\RadialLight.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="candle\VertexArray.cpp">
+      <Filter>Source Files\Candle</Filter>
+    </ClCompile>
+    <ClCompile Include="game_map\game_map.cpp">
       <Filter>Source Files\Game Map</Filter>
     </ClCompile>
-    <ClCompile Include="rng.cpp">
+    <ClCompile Include="game_map\rng.cpp">
       <Filter>Source Files\Game Map</Filter>
     </ClCompile>
-    <ClCompile Include="room.cpp">
+    <ClCompile Include="game_map\room.cpp">
       <Filter>Source Files\Game Map</Filter>
     </ClCompile>
-    <ClCompile Include="util.cpp">
+    <ClCompile Include="game_map\util.cpp">
       <Filter>Source Files\Game Map</Filter>
-    </ClCompile>
-    <ClCompile Include="player.cpp">
-      <Filter>Source Files\Main Stuff</Filter>
-    </ClCompile>
-    <ClCompile Include="bullet.cpp">
-      <Filter>Source Files\Main Stuff</Filter>
-    </ClCompile>
-    <ClCompile Include="game.cpp">
-      <Filter>Source Files\Main Stuff</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files\Main Stuff</Filter>
-    </ClCompile>
-    <ClCompile Include="Color.cpp">
-      <Filter>Source Files\Candle</Filter>
-    </ClCompile>
-    <ClCompile Include="Constants.cpp">
-      <Filter>Source Files\Candle</Filter>
-    </ClCompile>
-    <ClCompile Include="DirectedLight.cpp">
-      <Filter>Source Files\Candle</Filter>
-    </ClCompile>
-    <ClCompile Include="LightingArea.cpp">
-      <Filter>Source Files\Candle</Filter>
-    </ClCompile>
-    <ClCompile Include="LightSource.cpp">
-      <Filter>Source Files\Candle</Filter>
-    </ClCompile>
-    <ClCompile Include="Line.cpp">
-      <Filter>Source Files\Candle</Filter>
-    </ClCompile>
-    <ClCompile Include="Polygon.cpp">
-      <Filter>Source Files\Candle</Filter>
-    </ClCompile>
-    <ClCompile Include="RadialLight.cpp">
-      <Filter>Source Files\Candle</Filter>
-    </ClCompile>
-    <ClCompile Include="VertexArray.cpp">
-      <Filter>Source Files\Candle</Filter>
-    </ClCompile>
-    <ClCompile Include="item.cpp">
-      <Filter>Source Files\Main Stuff</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="rng.h">
+    <ClInclude Include="main\bullet.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="main\config.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="main\game.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="main\item.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="main\player.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="game_map\game_map.h">
       <Filter>Header Files\Game Map</Filter>
     </ClInclude>
-    <ClInclude Include="util.h">
+    <ClInclude Include="game_map\rng.h">
       <Filter>Header Files\Game Map</Filter>
     </ClInclude>
-    <ClInclude Include="room.h">
+    <ClInclude Include="game_map\room.h">
       <Filter>Header Files\Game Map</Filter>
     </ClInclude>
-    <ClInclude Include="game_map.h">
+    <ClInclude Include="game_map\util.h">
       <Filter>Header Files\Game Map</Filter>
     </ClInclude>
-    <ClInclude Include="player.h">
-      <Filter>Header Files\Main Stuff</Filter>
+    <ClInclude Include="resource_holder\template\resource_holder.hpp">
+      <Filter>Header Files\Resource Holder\Template</Filter>
     </ClInclude>
-    <ClInclude Include="bullet.h">
-      <Filter>Header Files\Main Stuff</Filter>
+    <ClInclude Include="resource_holder\template\resource_identifiers.h">
+      <Filter>Header Files\Resource Holder\Template</Filter>
     </ClInclude>
-    <ClInclude Include="game.h">
-      <Filter>Header Files\Main Stuff</Filter>
-    </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>Header Files\Main Stuff</Filter>
-    </ClInclude>
-    <ClInclude Include="resource_holder.hpp">
+    <ClInclude Include="resource_holder\texture_holders.h">
       <Filter>Header Files\Resource Holder</Filter>
-    </ClInclude>
-    <ClInclude Include="resource_identifiers.h">
-      <Filter>Header Files\Resource Holder</Filter>
-    </ClInclude>
-    <ClInclude Include="item.h">
-      <Filter>Header Files\Main Stuff</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="resource_holder.inl">
-      <Filter>Header Files\Resource Holder</Filter>
+    <None Include="resource_holder\template\resource_holder.inl">
+      <Filter>Header Files\Resource Holder\Template</Filter>
     </None>
   </ItemGroup>
 </Project>

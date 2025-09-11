@@ -2,7 +2,7 @@
 #include <limits>
 #include "room.h"
 #include "game_map.h"
-#include "config.h"
+#include "../main/config.h"
 #include "util.h"
 
 bool Room::CmpRoomsBySize(Room* room_one, Room* room_two) {

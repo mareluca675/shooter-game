@@ -3,8 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 #include <Candle/Candle.hpp>
-#include "player.h"
-#include "bullet.h"
+#include "../main/player.h"
+#include "../main/bullet.h"
 #include <vector>
 
 class Room;

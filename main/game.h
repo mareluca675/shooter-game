@@ -1,12 +1,12 @@
 #include <SFML/Graphics.hpp>
 #include <Candle/Candle.hpp>
-#include "resource_identifiers.h"
+#include "../resource_holder/template/resource_identifiers.h"
 #include "player.h"
 #include "bullet.h"
 #include "item.h"
-#include "game_map.h"
+#include "../game_map/game_map.h"
 #include "config.h"
-#include "rng.h"
+#include "../game_map/rng.h"
 
 
 #ifndef GAME_H

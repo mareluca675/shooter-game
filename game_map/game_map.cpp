@@ -5,7 +5,7 @@
 #include "rng.h"
 #include "room.h"
 #include "util.h"
-#include "config.h"
+#include "../main/config.h"
 
 GameMap::GameMap(int width, int height, int map_fill_percentage,
     int tile_width_in_pixels, int tile_height_in_pixels,

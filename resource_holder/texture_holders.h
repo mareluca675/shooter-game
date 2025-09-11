@@ -2,7 +2,7 @@
 #ifndef TEXTURES_HOLDERS_H
 #define TEXTURES_HOLDERS_H
 
-#include "resource_holder.hpp"
+#include "template/resource_holder.hpp"
 
 namespace Textures {
 	enum ID { Player, Bullet };

@@ -3,6 +3,7 @@
 #include "resource_identifiers.h"
 #include "player.h"
 #include "bullet.h"
+#include "item.h"
 #include "game_map.h"
 #include "config.h"
 #include "rng.h"
@@ -50,6 +51,9 @@ private:
 	// Bullets
 	std::vector<std::pair<Bullet, candle::RadialLight>> bullets;
 	void addBullet();
+
+	// Items
+	std::vector<Item> items;
 
 	// Time per frame
 	const sf::Time TIME_PER_FRAME = sf::seconds(1.0f / 60.0f);

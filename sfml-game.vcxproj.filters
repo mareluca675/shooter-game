@@ -84,6 +84,9 @@
     <ClCompile Include="VertexArray.cpp">
       <Filter>Source Files\Candle</Filter>
     </ClCompile>
+    <ClCompile Include="item.cpp">
+      <Filter>Source Files\Main Stuff</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rng.h">
@@ -115,6 +118,9 @@
     </ClInclude>
     <ClInclude Include="resource_identifiers.h">
       <Filter>Header Files\Resource Holder</Filter>
+    </ClInclude>
+    <ClInclude Include="item.h">
+      <Filter>Header Files\Main Stuff</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

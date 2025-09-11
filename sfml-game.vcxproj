@@ -145,6 +145,7 @@
     <ClCompile Include="DirectedLight.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="game_map.cpp" />
+    <ClCompile Include="item.cpp" />
     <ClCompile Include="LightingArea.cpp" />
     <ClCompile Include="LightSource.cpp" />
     <ClCompile Include="Line.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="config.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="game_map.h" />
+    <ClInclude Include="item.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="resource_holder.hpp" />
     <ClInclude Include="rng.h" />

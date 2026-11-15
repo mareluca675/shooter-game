@@ -1,15 +1,18 @@
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Keyboard.cpp.o: \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Keyboard.cpp \
  /usr/include/stdc-predef.h \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/InputImpl.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Config.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Config.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/InputImpl.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/InputImpl.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Angle.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Angle.inl \
- /usr/include/c++/15/cassert \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/String.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
+ /usr/include/c++/15/algorithm /usr/include/c++/15/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,28 +23,36 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Keyboard.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h \
- /usr/include/c++/15/pstl/pstl_config.h /usr/include/assert.h \
- /usr/include/c++/15/type_traits /usr/include/c++/15/bits/version.h \
- /usr/include/c++/15/cmath /usr/include/c++/15/bits/requires_hosted.h \
+ /usr/include/c++/15/pstl/pstl_config.h \
+ /usr/include/c++/15/bits/functexcept.h \
+ /usr/include/c++/15/bits/exception_defines.h \
  /usr/include/c++/15/bits/cpp_type_traits.h \
- /usr/include/c++/15/ext/type_traits.h /usr/include/math.h \
+ /usr/include/c++/15/bits/version.h /usr/include/c++/15/type_traits \
+ /usr/include/c++/15/ext/type_traits.h \
+ /usr/include/c++/15/ext/numeric_traits.h \
+ /usr/include/c++/15/bits/stl_pair.h /usr/include/c++/15/bits/move.h \
+ /usr/include/c++/15/bits/utility.h \
+ /usr/include/c++/15/bits/stl_iterator_base_types.h \
+ /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/15/bits/concept_check.h \
+ /usr/include/c++/15/debug/assertions.h \
+ /usr/include/c++/15/bits/stl_iterator.h \
+ /usr/include/c++/15/bits/ptr_traits.h /usr/include/c++/15/debug/debug.h \
+ /usr/include/c++/15/bits/predefined_ops.h /usr/include/c++/15/bit \
+ /usr/include/c++/15/concepts /usr/include/c++/15/bits/stl_algo.h \
+ /usr/include/c++/15/bits/algorithmfwd.h \
+ /usr/include/c++/15/initializer_list /usr/include/c++/15/bits/stl_heap.h \
+ /usr/include/c++/15/bits/uniform_int_dist.h \
+ /usr/include/c++/15/bits/stl_tempbuf.h /usr/include/c++/15/new \
+ /usr/include/c++/15/bits/exception.h \
+ /usr/include/c++/15/bits/stl_construct.h /usr/include/c++/15/cstdlib \
+ /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/15/bits/std_abs.h /usr/include/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
@@ -70,40 +81,10 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Keyboard.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/15/bits/specfun.h \
- /usr/include/c++/15/bits/stl_algobase.h \
- /usr/include/c++/15/bits/functexcept.h \
- /usr/include/c++/15/bits/exception_defines.h \
- /usr/include/c++/15/ext/numeric_traits.h \
- /usr/include/c++/15/bits/stl_pair.h /usr/include/c++/15/bits/move.h \
- /usr/include/c++/15/bits/utility.h \
- /usr/include/c++/15/bits/stl_iterator_base_types.h \
- /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/15/bits/concept_check.h \
- /usr/include/c++/15/debug/assertions.h \
- /usr/include/c++/15/bits/stl_iterator.h \
- /usr/include/c++/15/bits/ptr_traits.h /usr/include/c++/15/debug/debug.h \
- /usr/include/c++/15/bits/predefined_ops.h /usr/include/c++/15/bit \
- /usr/include/c++/15/concepts /usr/include/c++/15/limits \
- /usr/include/c++/15/tr1/gamma.tcc \
- /usr/include/c++/15/tr1/special_function_util.h \
- /usr/include/c++/15/tr1/bessel_function.tcc \
- /usr/include/c++/15/tr1/beta_function.tcc \
- /usr/include/c++/15/tr1/ell_integral.tcc \
- /usr/include/c++/15/tr1/exp_integral.tcc \
- /usr/include/c++/15/tr1/hypergeometric.tcc \
- /usr/include/c++/15/tr1/legendre_function.tcc \
- /usr/include/c++/15/tr1/modified_bessel_func.tcc \
- /usr/include/c++/15/tr1/poly_hermite.tcc \
- /usr/include/c++/15/tr1/poly_laguerre.tcc \
- /usr/include/c++/15/tr1/riemann_zeta.tcc \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/String.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Export.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
- /usr/include/c++/15/array /usr/include/c++/15/compare \
- /usr/include/c++/15/initializer_list \
- /usr/include/c++/15/bits/range_access.h /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/std_abs.h \
+ /usr/include/c++/15/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h \
  /usr/include/c++/15/clocale /usr/include/locale.h \
@@ -123,23 +104,21 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Keyboard.cpp.o: \
  /usr/include/c++/15/bits/char_traits.h \
  /usr/include/c++/15/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++allocator.h \
- /usr/include/c++/15/bits/new_allocator.h /usr/include/c++/15/new \
- /usr/include/c++/15/bits/exception.h \
+ /usr/include/c++/15/bits/new_allocator.h \
  /usr/include/c++/15/bits/ostream_insert.h \
  /usr/include/c++/15/bits/cxxabi_forced.h \
  /usr/include/c++/15/bits/stl_function.h \
  /usr/include/c++/15/backward/binders.h \
  /usr/include/c++/15/bits/refwrap.h /usr/include/c++/15/bits/invoke.h \
+ /usr/include/c++/15/bits/range_access.h \
  /usr/include/c++/15/bits/basic_string.h \
  /usr/include/c++/15/ext/alloc_traits.h \
- /usr/include/c++/15/bits/alloc_traits.h \
- /usr/include/c++/15/bits/stl_construct.h /usr/include/c++/15/string_view \
+ /usr/include/c++/15/bits/alloc_traits.h /usr/include/c++/15/string_view \
  /usr/include/c++/15/bits/functional_hash.h \
  /usr/include/c++/15/bits/hash_bytes.h \
  /usr/include/c++/15/bits/string_view.tcc \
- /usr/include/c++/15/ext/string_conversions.h /usr/include/c++/15/cstdlib \
- /usr/include/c++/15/cstdio /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/c++/15/ext/string_conversions.h /usr/include/c++/15/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
@@ -198,17 +177,7 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Keyboard.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/15/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
  /usr/include/c++/15/bits/locale_facets_nonio.tcc \
- /usr/include/c++/15/bits/locale_conv.h /usr/include/c++/15/optional \
- /usr/include/c++/15/bits/enable_special_members.h \
- /usr/include/c++/15/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/15/bits/locale_conv.h \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Utf.inl \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Err.hpp \
  /usr/include/c++/15/iterator /usr/include/c++/15/bits/stream_iterator.h \
- /usr/include/c++/15/ostream /usr/include/c++/15/bits/ostream.h \
- /usr/include/c++/15/ios /usr/include/c++/15/bits/basic_ios.h \
- /usr/include/c++/15/bits/basic_ios.tcc \
- /usr/include/c++/15/bits/ostream.tcc \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/String.inl

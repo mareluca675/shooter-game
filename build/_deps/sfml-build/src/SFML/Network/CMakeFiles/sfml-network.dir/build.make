@@ -75,182 +75,152 @@ include _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/codegen:
 .PHONY : _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/codegen
 
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.o: _deps/sfml-src/src/SFML/Network/Dns.cpp
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.o -MF CMakeFiles/sfml-network.dir/Dns.cpp.o.d -o CMakeFiles/sfml-network.dir/Dns.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Dns.cpp
-
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/Dns.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Dns.cpp > CMakeFiles/sfml-network.dir/Dns.cpp.i
-
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/Dns.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Dns.cpp -o CMakeFiles/sfml-network.dir/Dns.cpp.s
-
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o: _deps/sfml-src/src/SFML/Network/Ftp.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o -MF CMakeFiles/sfml-network.dir/Ftp.cpp.o.d -o CMakeFiles/sfml-network.dir/Ftp.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Ftp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o -MF CMakeFiles/sfml-network.dir/Ftp.cpp.o.d -o CMakeFiles/sfml-network.dir/Ftp.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Ftp.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/Ftp.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Ftp.cpp > CMakeFiles/sfml-network.dir/Ftp.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Ftp.cpp > CMakeFiles/sfml-network.dir/Ftp.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/Ftp.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Ftp.cpp -o CMakeFiles/sfml-network.dir/Ftp.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Ftp.cpp -o CMakeFiles/sfml-network.dir/Ftp.cpp.s
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o: _deps/sfml-src/src/SFML/Network/Http.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o -MF CMakeFiles/sfml-network.dir/Http.cpp.o.d -o CMakeFiles/sfml-network.dir/Http.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Http.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o -MF CMakeFiles/sfml-network.dir/Http.cpp.o.d -o CMakeFiles/sfml-network.dir/Http.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Http.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/Http.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Http.cpp > CMakeFiles/sfml-network.dir/Http.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Http.cpp > CMakeFiles/sfml-network.dir/Http.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/Http.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Http.cpp -o CMakeFiles/sfml-network.dir/Http.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Http.cpp -o CMakeFiles/sfml-network.dir/Http.cpp.s
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o: _deps/sfml-src/src/SFML/Network/IpAddress.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o -MF CMakeFiles/sfml-network.dir/IpAddress.cpp.o.d -o CMakeFiles/sfml-network.dir/IpAddress.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/IpAddress.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o -MF CMakeFiles/sfml-network.dir/IpAddress.cpp.o.d -o CMakeFiles/sfml-network.dir/IpAddress.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/IpAddress.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/IpAddress.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/IpAddress.cpp > CMakeFiles/sfml-network.dir/IpAddress.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/IpAddress.cpp > CMakeFiles/sfml-network.dir/IpAddress.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/IpAddress.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/IpAddress.cpp -o CMakeFiles/sfml-network.dir/IpAddress.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/IpAddress.cpp -o CMakeFiles/sfml-network.dir/IpAddress.cpp.s
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o: _deps/sfml-src/src/SFML/Network/Packet.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o -MF CMakeFiles/sfml-network.dir/Packet.cpp.o.d -o CMakeFiles/sfml-network.dir/Packet.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Packet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o -MF CMakeFiles/sfml-network.dir/Packet.cpp.o.d -o CMakeFiles/sfml-network.dir/Packet.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Packet.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/Packet.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Packet.cpp > CMakeFiles/sfml-network.dir/Packet.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Packet.cpp > CMakeFiles/sfml-network.dir/Packet.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/Packet.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Packet.cpp -o CMakeFiles/sfml-network.dir/Packet.cpp.s
-
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.o: _deps/sfml-src/src/SFML/Network/Sftp.cpp
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.o -MF CMakeFiles/sfml-network.dir/Sftp.cpp.o.d -o CMakeFiles/sfml-network.dir/Sftp.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Sftp.cpp
-
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/Sftp.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Sftp.cpp > CMakeFiles/sfml-network.dir/Sftp.cpp.i
-
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/Sftp.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Sftp.cpp -o CMakeFiles/sfml-network.dir/Sftp.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Packet.cpp -o CMakeFiles/sfml-network.dir/Packet.cpp.s
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o: _deps/sfml-src/src/SFML/Network/Socket.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o -MF CMakeFiles/sfml-network.dir/Socket.cpp.o.d -o CMakeFiles/sfml-network.dir/Socket.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o -MF CMakeFiles/sfml-network.dir/Socket.cpp.o.d -o CMakeFiles/sfml-network.dir/Socket.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Socket.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/Socket.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Socket.cpp > CMakeFiles/sfml-network.dir/Socket.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Socket.cpp > CMakeFiles/sfml-network.dir/Socket.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/Socket.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Socket.cpp -o CMakeFiles/sfml-network.dir/Socket.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Socket.cpp -o CMakeFiles/sfml-network.dir/Socket.cpp.s
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o: _deps/sfml-src/src/SFML/Network/SocketSelector.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o -MF CMakeFiles/sfml-network.dir/SocketSelector.cpp.o.d -o CMakeFiles/sfml-network.dir/SocketSelector.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/SocketSelector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o -MF CMakeFiles/sfml-network.dir/SocketSelector.cpp.o.d -o CMakeFiles/sfml-network.dir/SocketSelector.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/SocketSelector.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/SocketSelector.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/SocketSelector.cpp > CMakeFiles/sfml-network.dir/SocketSelector.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/SocketSelector.cpp > CMakeFiles/sfml-network.dir/SocketSelector.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/SocketSelector.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/SocketSelector.cpp -o CMakeFiles/sfml-network.dir/SocketSelector.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/SocketSelector.cpp -o CMakeFiles/sfml-network.dir/SocketSelector.cpp.s
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o: _deps/sfml-src/src/SFML/Network/TcpListener.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o -MF CMakeFiles/sfml-network.dir/TcpListener.cpp.o.d -o CMakeFiles/sfml-network.dir/TcpListener.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o -MF CMakeFiles/sfml-network.dir/TcpListener.cpp.o.d -o CMakeFiles/sfml-network.dir/TcpListener.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpListener.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/TcpListener.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpListener.cpp > CMakeFiles/sfml-network.dir/TcpListener.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpListener.cpp > CMakeFiles/sfml-network.dir/TcpListener.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/TcpListener.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpListener.cpp -o CMakeFiles/sfml-network.dir/TcpListener.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpListener.cpp -o CMakeFiles/sfml-network.dir/TcpListener.cpp.s
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o: _deps/sfml-src/src/SFML/Network/TcpSocket.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o -MF CMakeFiles/sfml-network.dir/TcpSocket.cpp.o.d -o CMakeFiles/sfml-network.dir/TcpSocket.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o -MF CMakeFiles/sfml-network.dir/TcpSocket.cpp.o.d -o CMakeFiles/sfml-network.dir/TcpSocket.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpSocket.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/TcpSocket.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpSocket.cpp > CMakeFiles/sfml-network.dir/TcpSocket.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpSocket.cpp > CMakeFiles/sfml-network.dir/TcpSocket.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/TcpSocket.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpSocket.cpp -o CMakeFiles/sfml-network.dir/TcpSocket.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/TcpSocket.cpp -o CMakeFiles/sfml-network.dir/TcpSocket.cpp.s
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o: _deps/sfml-src/src/SFML/Network/UdpSocket.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o -MF CMakeFiles/sfml-network.dir/UdpSocket.cpp.o.d -o CMakeFiles/sfml-network.dir/UdpSocket.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/UdpSocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o -MF CMakeFiles/sfml-network.dir/UdpSocket.cpp.o.d -o CMakeFiles/sfml-network.dir/UdpSocket.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/UdpSocket.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/UdpSocket.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/UdpSocket.cpp > CMakeFiles/sfml-network.dir/UdpSocket.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/UdpSocket.cpp > CMakeFiles/sfml-network.dir/UdpSocket.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/UdpSocket.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/UdpSocket.cpp -o CMakeFiles/sfml-network.dir/UdpSocket.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/UdpSocket.cpp -o CMakeFiles/sfml-network.dir/UdpSocket.cpp.s
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/flags.make
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o: _deps/sfml-src/src/SFML/Network/Unix/SocketImpl.cpp
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o -MF CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o.d -o CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Unix/SocketImpl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o -MF CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o.d -o CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Unix/SocketImpl.cpp
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Unix/SocketImpl.cpp > CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Unix/SocketImpl.cpp > CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.i
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Unix/SocketImpl.cpp -o CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Network/Unix/SocketImpl.cpp -o CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.s
 
 # Object files for target sfml-network
 sfml__network_OBJECTS = \
-"CMakeFiles/sfml-network.dir/Dns.cpp.o" \
 "CMakeFiles/sfml-network.dir/Ftp.cpp.o" \
 "CMakeFiles/sfml-network.dir/Http.cpp.o" \
 "CMakeFiles/sfml-network.dir/IpAddress.cpp.o" \
 "CMakeFiles/sfml-network.dir/Packet.cpp.o" \
-"CMakeFiles/sfml-network.dir/Sftp.cpp.o" \
 "CMakeFiles/sfml-network.dir/Socket.cpp.o" \
 "CMakeFiles/sfml-network.dir/SocketSelector.cpp.o" \
 "CMakeFiles/sfml-network.dir/TcpListener.cpp.o" \
@@ -261,26 +231,32 @@ sfml__network_OBJECTS = \
 # External object files for target sfml-network
 sfml__network_EXTERNAL_OBJECTS =
 
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make
-_deps/sfml-build/lib/libsfml-network.a: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library ../../../lib/libsfml-network.a"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && $(CMAKE_COMMAND) -P CMakeFiles/sfml-network.dir/cmake_clean_target.cmake
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Ftp.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Http.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/IpAddress.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Socket.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/SocketSelector.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpListener.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/TcpSocket.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/UdpSocket.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Unix/SocketImpl.cpp.o
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/compiler_depend.ts
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/lib/libsfml-system.so.2.6.0
+_deps/sfml-build/lib/libsfml-network.so.2.6.0: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library ../../../lib/libsfml-network.so"
 	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sfml-network.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../lib/libsfml-network.so.2.6.0 ../../../lib/libsfml-network.so.2.6 ../../../lib/libsfml-network.so
+
+_deps/sfml-build/lib/libsfml-network.so.2.6: _deps/sfml-build/lib/libsfml-network.so.2.6.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/sfml-build/lib/libsfml-network.so.2.6
+
+_deps/sfml-build/lib/libsfml-network.so: _deps/sfml-build/lib/libsfml-network.so.2.6.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/sfml-build/lib/libsfml-network.so
 
 # Rule to build all files generated by this target.
-_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build: _deps/sfml-build/lib/libsfml-network.a
+_deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build: _deps/sfml-build/lib/libsfml-network.so
 .PHONY : _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build
 
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/clean:

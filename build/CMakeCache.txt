@@ -17,14 +17,9 @@
 //Build demo application
 BUILD_DEMO:BOOL=OFF
 
-//Build the Unicode data generator tool
-BUILD_GENERATOR:BOOL=OFF
-
-//Build shared libraries
-BUILD_SHARED_LIBS:BOOL=OFF
-
-//Build the testing tree.
-BUILD_TESTING:BOOL=ON
+//TRUE to build SFML as shared libraries, FALSE to build it as
+// static libraries
+BUILD_SHARED_LIBS:BOOL=TRUE
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -200,10 +195,6 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
-//The minimal iOS version that will be able to run the built binaries.
-// Cannot be lower than 13.0
-CMAKE_OSX_DEPLOYMENT_TARGET:STRING=13.0
-
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
 
@@ -218,21 +209,6 @@ CMAKE_PROJECT_NAME:STATIC=shooter-game
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=3.1.0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=3
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=1
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -299,27 +275,53 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Value Computed by CMake
-CMakeSFMLProject_BINARY_DIR:STATIC=/home/mareluca675/Work/shooter-game/build
+//Enable to build Debian packages
+CPACK_BINARY_DEB:BOOL=OFF
 
-//Value Computed by CMake
-CMakeSFMLProject_IS_TOP_LEVEL:STATIC=ON
+//Enable to build FreeBSD packages
+CPACK_BINARY_FREEBSD:BOOL=OFF
 
-//Value Computed by CMake
-CMakeSFMLProject_SOURCE_DIR:STATIC=/home/mareluca675/Work/shooter-game
+//Enable to build IFW packages
+CPACK_BINARY_IFW:BOOL=OFF
 
-//Path to the coverage program that CTest uses for performing coverage
-// inspection
-COVERAGE_COMMAND:FILEPATH=/usr/bin/gcov
+//Enable to build NSIS packages
+CPACK_BINARY_NSIS:BOOL=OFF
 
-//Extra command line flags to pass to the coverage tool
-COVERAGE_EXTRA_FLAGS:STRING=-l
+//Enable to build RPM packages
+CPACK_BINARY_RPM:BOOL=OFF
 
-//How many times to retry timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_COUNT:STRING=3
+//Enable to build STGZ packages
+CPACK_BINARY_STGZ:BOOL=ON
 
-//How long to wait between timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_DELAY:STRING=5
+//Enable to build TBZ2 packages
+CPACK_BINARY_TBZ2:BOOL=OFF
+
+//Enable to build TGZ packages
+CPACK_BINARY_TGZ:BOOL=ON
+
+//Enable to build TXZ packages
+CPACK_BINARY_TXZ:BOOL=OFF
+
+//Enable to build TZ packages
+CPACK_BINARY_TZ:BOOL=ON
+
+//Enable to build RPM source packages
+CPACK_SOURCE_RPM:BOOL=OFF
+
+//Enable to build TBZ2 source packages
+CPACK_SOURCE_TBZ2:BOOL=ON
+
+//Enable to build TGZ source packages
+CPACK_SOURCE_TGZ:BOOL=ON
+
+//Enable to build TXZ source packages
+CPACK_SOURCE_TXZ:BOOL=ON
+
+//Enable to build TZ source packages
+CPACK_SOURCE_TZ:BOOL=ON
+
+//Enable to build ZIP source packages
+CPACK_SOURCE_ZIP:BOOL=OFF
 
 //Value Computed by CMake
 Candle_BINARY_DIR:STATIC=/home/mareluca675/Work/shooter-game/build/_deps/candle-build
@@ -329,18 +331,6 @@ Candle_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 Candle_SOURCE_DIR:STATIC=/home/mareluca675/Work/shooter-game/build/_deps/candle-src
-
-//Maximum time allowed before CTest will kill the test.
-DART_TESTING_TIMEOUT:STRING=1500
-
-//Enable address sanitizer
-ENABLE_ASAN:BOOL=OFF
-
-//Enable code coverage instrumentation (only enabled with BUILD_TESTING)
-ENABLE_COVERAGE:BOOL=OFF
-
-//Enable undefined behavior sanitizer
-ENABLE_UBSAN:BOOL=OFF
 
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/mareluca675/Work/shooter-game/build/_deps
@@ -360,10 +350,6 @@ FETCHCONTENT_SOURCE_DIR_CANDLE:PATH=
 // for SFML
 FETCHCONTENT_SOURCE_DIR_SFML:PATH=
 
-//When not empty, overrides where to find pre-populated content
-// for SheenBidi
-FETCHCONTENT_SOURCE_DIR_SHEENBIDI:PATH=
-
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
@@ -372,9 +358,6 @@ FETCHCONTENT_UPDATES_DISCONNECTED_CANDLE:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of SFML
 FETCHCONTENT_UPDATES_DISCONNECTED_SFML:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of SheenBidi
-FETCHCONTENT_UPDATES_DISCONNECTED_SHEENBIDI:BOOL=OFF
 
 //Path to a file.
 FLAC_INCLUDE_DIR:PATH=/usr/include
@@ -403,50 +386,20 @@ Fontconfig_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 Fontconfig_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libfontconfig.so
 
-//Path to a program.
-GITCOMMAND:FILEPATH=/usr/bin/git
-
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
-
-//Path to a file.
-HarfBuzz_INCLUDE_DIR:PATH=/usr/include/harfbuzz
-
-//Path to a library.
-HarfBuzz_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libharfbuzz.so
-
-//Path to a file.
-LIBSSH2_INCLUDE_DIR:PATH=/usr/include
-
-//Path to a library.
-LIBSSH2_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libssh2.so
-
-//Command to build the project
-MAKECOMMAND:STRING=/usr/local/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
-
-//Path to a library.
-MBEDCRYPTO_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libmbedcrypto.so
-
-//Path to a file.
-MBEDTLS_INCLUDE_DIR:PATH=/usr/include
-
-//Path to a library.
-MBEDTLS_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libmbedtls.so
-
-//Path to a library.
-MBEDX509_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libmbedx509.so
-
-//Path to the memory checking command, used for memory error detection.
-MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
-
-//File that contains suppressions for the memory checker
-MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Path to a file.
 OGG_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a library.
 OGG_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libogg.so
+
+//Path to a file.
+OPENAL_INCLUDE_DIR:PATH=/usr/include/AL
+
+//Path to a library.
+OPENAL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libopenal.so
 
 //Path to a file.
 OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
@@ -499,82 +452,53 @@ PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 //Use RadialLight fix for errors with textures
 RADIAL_LIGHT_FIX:BOOL=OFF
 
-//Builds the optional text editing and analysis API
-SB_CONFIG_EXPERIMENTAL_TEXT_API:BOOL=OFF
-
-//Build with a single unity source file
-SB_CONFIG_UNITY:BOOL=ON
-
 //Value Computed by CMake
 SFML_BINARY_DIR:STATIC=/home/mareluca675/Work/shooter-game/build/_deps/sfml-build
 
-//ON to build SFML's Audio module.
-SFML_BUILD_AUDIO:BOOL=ON
+//TRUE to build SFML's Audio module.
+SFML_BUILD_AUDIO:BOOL=TRUE
 
-//ON to build SFML's Graphics module.
-SFML_BUILD_GRAPHICS:BOOL=ON
+//TRUE to generate the API documentation, FALSE to ignore it
+SFML_BUILD_DOC:BOOL=FALSE
 
-//ON to build SFML's Network module.
-SFML_BUILD_NETWORK:BOOL=ON
+//TRUE to build the SFML examples, FALSE to ignore them
+SFML_BUILD_EXAMPLES:BOOL=FALSE
 
-//ON to build SFML's Window module. This setting is ignored, if
-// the graphics module is built.
-SFML_BUILD_WINDOW:BOOL=ON
+//TRUE to build SFML's Graphics module.
+SFML_BUILD_GRAPHICS:BOOL=TRUE
 
-//Path to a CA bundle file or directory that should be used instead
-// of the default directories to verify certificates.
-SFML_CA_PATH:PATH=
+//TRUE to build SFML's Network module.
+SFML_BUILD_NETWORK:BOOL=TRUE
 
-//ON to configure extras, OFF to ignore them
-SFML_CONFIGURE_EXTRAS:BOOL=OFF
+//TRUE to build the SFML test suite, FALSE to ignore it
+SFML_BUILD_TEST_SUITE:BOOL=FALSE
 
-//ON to enable precompiled headers for SFML builds -- only supported
-// on Windows/Linux and for static library builds
-SFML_ENABLE_PCH:BOOL=OFF
+//TRUE to build SFML's Window module. This setting is ignored,
+// if the graphics module is built.
+SFML_BUILD_WINDOW:BOOL=TRUE
 
-//Enable sanitizers
-SFML_ENABLE_SANITIZERS:BOOL=OFF
-
-//Enable standard library assertions
-SFML_ENABLE_STDLIB_ASSERTIONS:BOOL=OFF
-
-//ON to automatically install pkg-config files so other projects
+//TRUE to automatically install pkg-config files so other projects
 // can find SFML
-SFML_INSTALL_PKGCONFIG_FILES:BOOL=ON
+SFML_INSTALL_PKGCONFIG_FILES:BOOL=TRUE
 
 //Value Computed by CMake
 SFML_IS_TOP_LEVEL:STATIC=OFF
 
-//ON to use an OpenGL ES implementation, OFF to use a desktop OpenGL
-// implementation
+//TRUE to use an OpenGL ES implementation, FALSE to use a desktop
+// OpenGL implementation
 SFML_OPENGL_ES:BOOL=0
 
 //Install directory for SFML's pkg-config .pc files
-SFML_PKGCONFIG_INSTALL_DIR:PATH=lib/pkgconfig
+SFML_PKGCONFIG_INSTALL_PREFIX:PATH=/usr/local/lib/pkgconfig
 
 //Value Computed by CMake
 SFML_SOURCE_DIR:STATIC=/home/mareluca675/Work/shooter-game/build/_deps/sfml-src
 
-//ON to use DRM windowing backend
-SFML_USE_DRM:BOOL=OFF
+//TRUE to use DRM windowing backend
+SFML_USE_DRM:BOOL=FALSE
 
-//ON to use system dependencies, OFF to use the bundled ones.
-SFML_USE_SYSTEM_DEPS:BOOL=ON
-
-//Treat compiler warnings as errors
-SFML_WARNINGS_AS_ERRORS:BOOL=OFF
-
-//Name of the computer/site where compile is being run
-SITE:STRING=luca-ubuntu
-
-//Value Computed by CMake
-SheenBidi_BINARY_DIR:STATIC=/home/mareluca675/Work/shooter-game/build/_deps/sheenbidi-build
-
-//Value Computed by CMake
-SheenBidi_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-SheenBidi_SOURCE_DIR:STATIC=/home/mareluca675/Work/shooter-game/build/_deps/sheenbidi-src
+//TRUE to use system dependencies, FALSE to use the bundled ones.
+SFML_USE_SYSTEM_DEPS:BOOL=FALSE
 
 //Path to a file.
 UDEV_INCLUDE_DIR:PATH=/usr/include
@@ -593,6 +517,9 @@ VORBIS_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a library.
 VORBIS_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvorbis.so
+
+//Treat compiler warnings as errors
+WARNINGS_AS_ERRORS:BOOL=ON
 
 //Path to a file.
 X11_ICE_INCLUDE_PATH:PATH=/usr/include
@@ -1006,13 +933,25 @@ X11_xkbfile_INCLUDE_PATH:PATH=X11_xkbfile_INCLUDE_PATH-NOTFOUND
 X11_xkbfile_LIB:FILEPATH=X11_xkbfile_LIB-NOTFOUND
 
 //Path to a library.
-pkgcfg_lib_PC_HARFBUZZ_harfbuzz:FILEPATH=/usr/lib/x86_64-linux-gnu/libharfbuzz.so
-
-//Path to a library.
 pkgcfg_lib_PKG_FONTCONFIG_fontconfig:FILEPATH=/usr/lib/x86_64-linux-gnu/libfontconfig.so
 
 //Path to a library.
 pkgcfg_lib_PKG_FONTCONFIG_freetype:FILEPATH=/usr/lib/x86_64-linux-gnu/libfreetype.so
+
+//Dependencies for the target
+sfml-audio_LIB_DEPENDS:STATIC=general;sfml-system;
+
+//Dependencies for the target
+sfml-graphics_LIB_DEPENDS:STATIC=general;sfml-window;
+
+//Dependencies for the target
+sfml-network_LIB_DEPENDS:STATIC=general;sfml-system;
+
+//Dependencies for the target
+sfml-system_LIB_DEPENDS:STATIC=general;pthread;general;rt;
+
+//Dependencies for the target
+sfml-window_LIB_DEPENDS:STATIC=general;sfml-system;general;dl;
 
 //Value Computed by CMake
 shooter-game_BINARY_DIR:STATIC=/home/mareluca675/Work/shooter-game/build
@@ -1028,8 +967,6 @@ shooter-game_SOURCE_DIR:STATIC=/home/mareluca675/Work/shooter-game
 # INTERNAL cache entries
 ########################
 
-//Test ATOMIC_TEST
-ATOMIC_TEST:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -1048,8 +985,6 @@ CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 CMAKE_COMMAND:INTERNAL=/usr/local/bin/cmake
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=/usr/local/bin/cpack
-//ADVANCED property for variable: CMAKE_CTEST_COMMAND
-CMAKE_CTEST_COMMAND-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/local/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
@@ -1121,8 +1056,6 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_CONNECT:INTERNAL=1
 //Have function gethostbyname
 CMAKE_HAVE_GETHOSTBYNAME:INTERNAL=1
-//Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Have function remove
 CMAKE_HAVE_REMOVE:INTERNAL=1
 //Have function shmat
@@ -1185,7 +1118,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1234,36 +1167,48 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Deprecated.  Use -W[no-]deprecated instead.
 CMAKE_WARN_DEPRECATED:INTERNAL=ON
-//ADVANCED property for variable: COVERAGE_COMMAND
-COVERAGE_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
-COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
-CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
-CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DART_TESTING_TIMEOUT
-DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_DEB
+CPACK_BINARY_DEB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_FREEBSD
+CPACK_BINARY_FREEBSD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_IFW
+CPACK_BINARY_IFW-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_NSIS
+CPACK_BINARY_NSIS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_RPM
+CPACK_BINARY_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_STGZ
+CPACK_BINARY_STGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TBZ2
+CPACK_BINARY_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TGZ
+CPACK_BINARY_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TXZ
+CPACK_BINARY_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_TZ
+CPACK_BINARY_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_RPM
+CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TBZ2
+CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TGZ
+CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TXZ
+CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TZ
+CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_ZIP
+CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //Details about finding FLAC
 FIND_PACKAGE_MESSAGE_DETAILS_FLAC:INTERNAL=[/usr/lib/x86_64-linux-gnu/libFLAC.so][/usr/include][v()]
-//Details about finding Freetype
-FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[/usr/lib/x86_64-linux-gnu/libfreetype.so][/usr/include/freetype2][2.14.2][v()]
-//Details about finding HarfBuzz
-FIND_PACKAGE_MESSAGE_DETAILS_HarfBuzz:INTERNAL=[/usr/include/harfbuzz][/usr/lib/x86_64-linux-gnu/libharfbuzz.so][ON][v12.3.2()]
-//Details about finding Libssh2
-FIND_PACKAGE_MESSAGE_DETAILS_Libssh2:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libssh2.so][v1.11.1()]
-//Details about finding MbedTLS
-FIND_PACKAGE_MESSAGE_DETAILS_MbedTLS:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libmbedtls.so][/usr/lib/x86_64-linux-gnu/libmbedx509.so][/usr/lib/x86_64-linux-gnu/libmbedcrypto.so][v3.6.5()]
+//Details about finding OpenAL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libopenal.so][/usr/include/AL][v()]
 //Details about finding OpenGL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libGL.so][/usr/lib/x86_64-linux-gnu/libGL.so][/usr/include][found components: OpenGL ][v()]
-//Details about finding Threads
-FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//Details about finding UDev
-FIND_PACKAGE_MESSAGE_DETAILS_UDev:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libudev.so][v()]
-//Details about finding Vorbis
-FIND_PACKAGE_MESSAGE_DETAILS_Vorbis:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libogg.so][/usr/include][/usr/lib/x86_64-linux-gnu/libvorbis.so][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libGL.so][/usr/lib/x86_64-linux-gnu/libGL.so][/usr/include][ ][v()]
+//Details about finding VORBIS
+FIND_PACKAGE_MESSAGE_DETAILS_VORBIS:INTERNAL=[/usr/lib/x86_64-linux-gnu/libvorbisenc.so;/usr/lib/x86_64-linux-gnu/libvorbisfile.so;/usr/lib/x86_64-linux-gnu/libvorbis.so;/usr/lib/x86_64-linux-gnu/libogg.so][/usr/include][/usr/include][v()]
 //Details about finding X11
-FIND_PACKAGE_MESSAGE_DETAILS_X11:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libX11.so][found components: Xrandr Xcursor Xi ][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_X11:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libX11.so][ ][v()]
 //ADVANCED property for variable: FLAC_INCLUDE_DIR
 FLAC_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FLAC_LIBRARY
@@ -1282,36 +1227,16 @@ FREETYPE_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 Fontconfig_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Fontconfig_LIBRARY
 Fontconfig_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GITCOMMAND
-GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: HarfBuzz_INCLUDE_DIR
-HarfBuzz_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: HarfBuzz_LIBRARY
-HarfBuzz_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: LIBSSH2_INCLUDE_DIR
-LIBSSH2_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: LIBSSH2_LIBRARY
-LIBSSH2_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MAKECOMMAND
-MAKECOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MBEDCRYPTO_LIBRARY
-MBEDCRYPTO_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MBEDTLS_INCLUDE_DIR
-MBEDTLS_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MBEDTLS_LIBRARY
-MBEDTLS_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MBEDX509_LIBRARY
-MBEDX509_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_COMMAND
-MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
-MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGG_INCLUDE_DIR
 OGG_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OGG_LIBRARY
 OGG_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENAL_INCLUDE_DIR
+OPENAL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENAL_LIBRARY
+OPENAL_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
 OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLES2_INCLUDE_DIR
@@ -1340,41 +1265,6 @@ OPENGL_glx_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_xmesa_INCLUDE_DIR
 OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
-PC_HARFBUZZ_CFLAGS:INTERNAL=-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include;-I/usr/include/sysprof-6;-pthread
-PC_HARFBUZZ_CFLAGS_I:INTERNAL=
-PC_HARFBUZZ_CFLAGS_OTHER:INTERNAL=-pthread
-PC_HARFBUZZ_FOUND:INTERNAL=1
-PC_HARFBUZZ_INCLUDEDIR:INTERNAL=/usr/include
-PC_HARFBUZZ_INCLUDE_DIRS:INTERNAL=/usr/include/harfbuzz;/usr/include/freetype2;/usr/include;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include;/usr/include/sysprof-6
-PC_HARFBUZZ_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lharfbuzz
-PC_HARFBUZZ_LDFLAGS_OTHER:INTERNAL=
-PC_HARFBUZZ_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
-PC_HARFBUZZ_LIBRARIES:INTERNAL=harfbuzz
-PC_HARFBUZZ_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
-PC_HARFBUZZ_LIBS:INTERNAL=
-PC_HARFBUZZ_LIBS_L:INTERNAL=
-PC_HARFBUZZ_LIBS_OTHER:INTERNAL=
-PC_HARFBUZZ_LIBS_PATHS:INTERNAL=
-PC_HARFBUZZ_MODULE_NAME:INTERNAL=harfbuzz
-PC_HARFBUZZ_PREFIX:INTERNAL=/usr
-PC_HARFBUZZ_STATIC_CFLAGS:INTERNAL=-I/usr/include/harfbuzz;-I/usr/include/freetype2;-I/usr/include;-I/usr/include/libpng16;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include;-I/usr/include/sysprof-6;-pthread
-PC_HARFBUZZ_STATIC_CFLAGS_I:INTERNAL=
-PC_HARFBUZZ_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
-PC_HARFBUZZ_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/harfbuzz;/usr/include/freetype2;/usr/include;/usr/include/libpng16;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include;/usr/include/sysprof-6
-PC_HARFBUZZ_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lharfbuzz;-pthread;-lm;-lfreetype;-L/usr/lib;-lbz2;-lpng16;-lm;-lz;-lbrotlidec;-lbrotlicommon;-lglib-2.0;-latomic;-lm;-lsysprof-capture-4;-Wl,-z,nodelete;-pthread;-lpcre2-8;-lgraphite2
-PC_HARFBUZZ_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-Wl,-z,nodelete;-pthread
-PC_HARFBUZZ_STATIC_LIBDIR:INTERNAL=
-PC_HARFBUZZ_STATIC_LIBRARIES:INTERNAL=harfbuzz;m;freetype;bz2;png16;m;z;brotlidec;brotlicommon;glib-2.0;atomic;m;sysprof-capture-4;pcre2-8;graphite2
-PC_HARFBUZZ_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib
-PC_HARFBUZZ_STATIC_LIBS:INTERNAL=
-PC_HARFBUZZ_STATIC_LIBS_L:INTERNAL=
-PC_HARFBUZZ_STATIC_LIBS_OTHER:INTERNAL=
-PC_HARFBUZZ_STATIC_LIBS_PATHS:INTERNAL=
-PC_HARFBUZZ_VERSION:INTERNAL=12.3.2
-PC_HARFBUZZ_harfbuzz_INCLUDEDIR:INTERNAL=
-PC_HARFBUZZ_harfbuzz_LIBDIR:INTERNAL=
-PC_HARFBUZZ_harfbuzz_PREFIX:INTERNAL=
-PC_HARFBUZZ_harfbuzz_VERSION:INTERNAL=
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
@@ -1414,8 +1304,6 @@ PKG_FONTCONFIG_fontconfig_INCLUDEDIR:INTERNAL=
 PKG_FONTCONFIG_fontconfig_LIBDIR:INTERNAL=
 PKG_FONTCONFIG_fontconfig_PREFIX:INTERNAL=
 PKG_FONTCONFIG_fontconfig_VERSION:INTERNAL=
-//ADVANCED property for variable: SITE
-SITE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: UDEV_INCLUDE_DIR
 UDEV_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: UDEV_LIBRARIES
@@ -1704,12 +1592,8 @@ X11_xkbfile_INCLUDE_PATH-ADVANCED:INTERNAL=1
 X11_xkbfile_LIB-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
-__pkg_config_arguments_PC_HARFBUZZ:INTERNAL=QUIET;harfbuzz
 __pkg_config_arguments_PKG_FONTCONFIG:INTERNAL=QUIET;fontconfig
-__pkg_config_checked_PC_HARFBUZZ:INTERNAL=1
 __pkg_config_checked_PKG_FONTCONFIG:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_PC_HARFBUZZ_harfbuzz
-pkgcfg_lib_PC_HARFBUZZ_harfbuzz-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PKG_FONTCONFIG_fontconfig
 pkgcfg_lib_PKG_FONTCONFIG_fontconfig-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PKG_FONTCONFIG_freetype

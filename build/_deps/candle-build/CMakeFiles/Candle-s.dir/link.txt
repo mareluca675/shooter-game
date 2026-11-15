@@ -1,2 +1,2 @@
-/usr/bin/ar qc libCandle-s.a "CMakeFiles/Candle-s.dir/src/LightingArea.cpp.o" "CMakeFiles/Candle-s.dir/src/LightSource.cpp.o" "CMakeFiles/Candle-s.dir/src/RadialLight.cpp.o" "CMakeFiles/Candle-s.dir/src/DirectedLight.cpp.o" "CMakeFiles/Candle-s.dir/src/Line.cpp.o" "CMakeFiles/Candle-s.dir/src/Polygon.cpp.o" "CMakeFiles/Candle-s.dir/src/Color.cpp.o" "CMakeFiles/Candle-s.dir/src/VertexArray.cpp.o" "CMakeFiles/Candle-s.dir/src/Constants.cpp.o"
-/usr/bin/ranlib libCandle-s.a
+/usr/bin/ar qc lib/libCandle-s.a "CMakeFiles/Candle-s.dir/src/LightingArea.cpp.o" "CMakeFiles/Candle-s.dir/src/LightSource.cpp.o" "CMakeFiles/Candle-s.dir/src/RadialLight.cpp.o" "CMakeFiles/Candle-s.dir/src/DirectedLight.cpp.o" "CMakeFiles/Candle-s.dir/src/Line.cpp.o" "CMakeFiles/Candle-s.dir/src/Polygon.cpp.o" "CMakeFiles/Candle-s.dir/src/Color.cpp.o" "CMakeFiles/Candle-s.dir/src/VertexArray.cpp.o" "CMakeFiles/Candle-s.dir/src/Constants.cpp.o"
+/usr/bin/ranlib lib/libCandle-s.a

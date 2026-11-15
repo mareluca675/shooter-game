@@ -79,176 +79,279 @@ _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o: _deps/s
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o: _deps/sfml-src/src/SFML/System/Clock.cpp
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o -MF CMakeFiles/sfml-system.dir/Clock.cpp.o.d -o CMakeFiles/sfml-system.dir/Clock.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Clock.cpp
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o -MF CMakeFiles/sfml-system.dir/Clock.cpp.o.d -o CMakeFiles/sfml-system.dir/Clock.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Clock.cpp
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Clock.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Clock.cpp > CMakeFiles/sfml-system.dir/Clock.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Clock.cpp > CMakeFiles/sfml-system.dir/Clock.cpp.i
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Clock.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Clock.cpp -o CMakeFiles/sfml-system.dir/Clock.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Clock.cpp -o CMakeFiles/sfml-system.dir/Clock.cpp.s
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o: _deps/sfml-src/src/SFML/System/Err.cpp
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o -MF CMakeFiles/sfml-system.dir/Err.cpp.o.d -o CMakeFiles/sfml-system.dir/Err.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Err.cpp
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o -MF CMakeFiles/sfml-system.dir/Err.cpp.o.d -o CMakeFiles/sfml-system.dir/Err.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Err.cpp
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Err.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Err.cpp > CMakeFiles/sfml-system.dir/Err.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Err.cpp > CMakeFiles/sfml-system.dir/Err.cpp.i
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Err.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Err.cpp -o CMakeFiles/sfml-system.dir/Err.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Err.cpp -o CMakeFiles/sfml-system.dir/Err.cpp.s
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.o: _deps/sfml-src/src/SFML/System/Lock.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.o -MF CMakeFiles/sfml-system.dir/Lock.cpp.o.d -o CMakeFiles/sfml-system.dir/Lock.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Lock.cpp
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Lock.cpp.i"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Lock.cpp > CMakeFiles/sfml-system.dir/Lock.cpp.i
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Lock.cpp.s"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Lock.cpp -o CMakeFiles/sfml-system.dir/Lock.cpp.s
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.o: _deps/sfml-src/src/SFML/System/Mutex.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.o -MF CMakeFiles/sfml-system.dir/Mutex.cpp.o.d -o CMakeFiles/sfml-system.dir/Mutex.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Mutex.cpp
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Mutex.cpp.i"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Mutex.cpp > CMakeFiles/sfml-system.dir/Mutex.cpp.i
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Mutex.cpp.s"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Mutex.cpp -o CMakeFiles/sfml-system.dir/Mutex.cpp.s
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o: _deps/sfml-src/src/SFML/System/Sleep.cpp
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o -MF CMakeFiles/sfml-system.dir/Sleep.cpp.o.d -o CMakeFiles/sfml-system.dir/Sleep.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Sleep.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o -MF CMakeFiles/sfml-system.dir/Sleep.cpp.o.d -o CMakeFiles/sfml-system.dir/Sleep.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Sleep.cpp
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Sleep.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Sleep.cpp > CMakeFiles/sfml-system.dir/Sleep.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Sleep.cpp > CMakeFiles/sfml-system.dir/Sleep.cpp.i
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Sleep.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Sleep.cpp -o CMakeFiles/sfml-system.dir/Sleep.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Sleep.cpp -o CMakeFiles/sfml-system.dir/Sleep.cpp.s
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o: _deps/sfml-src/src/SFML/System/String.cpp
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o -MF CMakeFiles/sfml-system.dir/String.cpp.o.d -o CMakeFiles/sfml-system.dir/String.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/String.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o -MF CMakeFiles/sfml-system.dir/String.cpp.o.d -o CMakeFiles/sfml-system.dir/String.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/String.cpp
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/String.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/String.cpp > CMakeFiles/sfml-system.dir/String.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/String.cpp > CMakeFiles/sfml-system.dir/String.cpp.i
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/String.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/String.cpp -o CMakeFiles/sfml-system.dir/String.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/String.cpp -o CMakeFiles/sfml-system.dir/String.cpp.s
 
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o: _deps/sfml-src/src/SFML/System/TimeoutWithPredicate.cpp
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o -MF CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o.d -o CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/TimeoutWithPredicate.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.o: _deps/sfml-src/src/SFML/System/Thread.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.o -MF CMakeFiles/sfml-system.dir/Thread.cpp.o.d -o CMakeFiles/sfml-system.dir/Thread.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Thread.cpp
 
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/TimeoutWithPredicate.cpp > CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.i
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Thread.cpp.i"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Thread.cpp > CMakeFiles/sfml-system.dir/Thread.cpp.i
 
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/TimeoutWithPredicate.cpp -o CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.s
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Thread.cpp.s"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Thread.cpp -o CMakeFiles/sfml-system.dir/Thread.cpp.s
 
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.o: _deps/sfml-src/src/SFML/System/Utils.cpp
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.o -MF CMakeFiles/sfml-system.dir/Utils.cpp.o.d -o CMakeFiles/sfml-system.dir/Utils.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Utils.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o: _deps/sfml-src/src/SFML/System/ThreadLocal.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o -MF CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o.d -o CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/ThreadLocal.cpp
 
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Utils.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Utils.cpp > CMakeFiles/sfml-system.dir/Utils.cpp.i
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/ThreadLocal.cpp.i"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/ThreadLocal.cpp > CMakeFiles/sfml-system.dir/ThreadLocal.cpp.i
 
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Utils.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Utils.cpp -o CMakeFiles/sfml-system.dir/Utils.cpp.s
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/ThreadLocal.cpp.s"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/ThreadLocal.cpp -o CMakeFiles/sfml-system.dir/ThreadLocal.cpp.s
 
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.o: _deps/sfml-src/src/SFML/System/Version.cpp
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.o -MF CMakeFiles/sfml-system.dir/Version.cpp.o.d -o CMakeFiles/sfml-system.dir/Version.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Version.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.o: _deps/sfml-src/src/SFML/System/Time.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.o -MF CMakeFiles/sfml-system.dir/Time.cpp.o.d -o CMakeFiles/sfml-system.dir/Time.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Time.cpp
 
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Version.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Version.cpp > CMakeFiles/sfml-system.dir/Version.cpp.i
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Time.cpp.i"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Time.cpp > CMakeFiles/sfml-system.dir/Time.cpp.i
 
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Version.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Version.cpp -o CMakeFiles/sfml-system.dir/Version.cpp.s
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Time.cpp.s"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Time.cpp -o CMakeFiles/sfml-system.dir/Time.cpp.s
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o: _deps/sfml-src/src/SFML/System/FileInputStream.cpp
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o -MF CMakeFiles/sfml-system.dir/FileInputStream.cpp.o.d -o CMakeFiles/sfml-system.dir/FileInputStream.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/FileInputStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o -MF CMakeFiles/sfml-system.dir/FileInputStream.cpp.o.d -o CMakeFiles/sfml-system.dir/FileInputStream.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/FileInputStream.cpp
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/FileInputStream.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/FileInputStream.cpp > CMakeFiles/sfml-system.dir/FileInputStream.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/FileInputStream.cpp > CMakeFiles/sfml-system.dir/FileInputStream.cpp.i
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/FileInputStream.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/FileInputStream.cpp -o CMakeFiles/sfml-system.dir/FileInputStream.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/FileInputStream.cpp -o CMakeFiles/sfml-system.dir/FileInputStream.cpp.s
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o: _deps/sfml-src/src/SFML/System/MemoryInputStream.cpp
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o -MF CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o.d -o CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/MemoryInputStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o -MF CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o.d -o CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/MemoryInputStream.cpp
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/MemoryInputStream.cpp > CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/MemoryInputStream.cpp > CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.i
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/MemoryInputStream.cpp -o CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/MemoryInputStream.cpp -o CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.s
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o: _deps/sfml-src/src/SFML/System/Unix/ClockImpl.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o -MF CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o.d -o CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/ClockImpl.cpp
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.i"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/ClockImpl.cpp > CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.i
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.s"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/ClockImpl.cpp -o CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.s
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o: _deps/sfml-src/src/SFML/System/Unix/MutexImpl.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o -MF CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o.d -o CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/MutexImpl.cpp
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.i"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/MutexImpl.cpp > CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.i
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.s"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/MutexImpl.cpp -o CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.s
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o: _deps/sfml-src/src/SFML/System/Unix/SleepImpl.cpp
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o -MF CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o.d -o CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/SleepImpl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o -MF CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o.d -o CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/SleepImpl.cpp
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.i"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/SleepImpl.cpp > CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.i
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/SleepImpl.cpp > CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.i
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.s"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/SleepImpl.cpp -o CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.s
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/SleepImpl.cpp -o CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.s
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o: _deps/sfml-src/src/SFML/System/Unix/ThreadImpl.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o -MF CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o.d -o CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/ThreadImpl.cpp
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.i"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/ThreadImpl.cpp > CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.i
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.s"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/ThreadImpl.cpp -o CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.s
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/flags.make
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o: _deps/sfml-src/src/SFML/System/Unix/ThreadLocalImpl.cpp
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -MD -MT _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o -MF CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o.d -o CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o -c /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/ThreadLocalImpl.cpp
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.i"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -E /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/ThreadLocalImpl.cpp > CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.i
+
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.s"
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS)  -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wdouble-promotion -Wformat=2 -Wnull-dereference -Wold-style-cast -Wpedantic -Werror -Wmisleading-indentation -Wduplicated-cond -Wlogical-op -Wduplicated-branches -S /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/Unix/ThreadLocalImpl.cpp -o CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.s
 
 # Object files for target sfml-system
 sfml__system_OBJECTS = \
 "CMakeFiles/sfml-system.dir/Clock.cpp.o" \
 "CMakeFiles/sfml-system.dir/Err.cpp.o" \
+"CMakeFiles/sfml-system.dir/Lock.cpp.o" \
+"CMakeFiles/sfml-system.dir/Mutex.cpp.o" \
 "CMakeFiles/sfml-system.dir/Sleep.cpp.o" \
 "CMakeFiles/sfml-system.dir/String.cpp.o" \
-"CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o" \
-"CMakeFiles/sfml-system.dir/Utils.cpp.o" \
-"CMakeFiles/sfml-system.dir/Version.cpp.o" \
+"CMakeFiles/sfml-system.dir/Thread.cpp.o" \
+"CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o" \
+"CMakeFiles/sfml-system.dir/Time.cpp.o" \
 "CMakeFiles/sfml-system.dir/FileInputStream.cpp.o" \
 "CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o" \
-"CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o"
+"CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o" \
+"CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o" \
+"CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o" \
+"CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o" \
+"CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o"
 
 # External object files for target sfml-system
 sfml__system_EXTERNAL_OBJECTS =
 
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make
-_deps/sfml-build/lib/libsfml-system.a: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library ../../../lib/libsfml-system.a"
-	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && $(CMAKE_COMMAND) -P CMakeFiles/sfml-system.dir/cmake_clean_target.cmake
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Clock.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Err.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Sleep.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/compiler_depend.ts
+_deps/sfml-build/lib/libsfml-system.so.2.6.0: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library ../../../lib/libsfml-system.so"
 	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sfml-system.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System && $(CMAKE_COMMAND) -E cmake_symlink_library ../../../lib/libsfml-system.so.2.6.0 ../../../lib/libsfml-system.so.2.6 ../../../lib/libsfml-system.so
+
+_deps/sfml-build/lib/libsfml-system.so.2.6: _deps/sfml-build/lib/libsfml-system.so.2.6.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/sfml-build/lib/libsfml-system.so.2.6
+
+_deps/sfml-build/lib/libsfml-system.so: _deps/sfml-build/lib/libsfml-system.so.2.6.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/sfml-build/lib/libsfml-system.so
 
 # Rule to build all files generated by this target.
-_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build: _deps/sfml-build/lib/libsfml-system.a
+_deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build: _deps/sfml-build/lib/libsfml-system.so
 .PHONY : _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build
 
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/clean:

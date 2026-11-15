@@ -1,15 +1,15 @@
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/WindowImplX11.cpp.o: \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/WindowImplX11.cpp \
  /usr/include/stdc-predef.h \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/InputImpl.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/WindowImplX11.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Event.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Config.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Joystick.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Angle.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Angle.inl \
- /usr/include/c++/15/cassert \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/String.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
+ /usr/include/c++/15/algorithm /usr/include/c++/15/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,28 +20,36 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/WindowImplX11.c
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h \
- /usr/include/c++/15/pstl/pstl_config.h /usr/include/assert.h \
- /usr/include/c++/15/type_traits /usr/include/c++/15/bits/version.h \
- /usr/include/c++/15/cmath /usr/include/c++/15/bits/requires_hosted.h \
+ /usr/include/c++/15/pstl/pstl_config.h \
+ /usr/include/c++/15/bits/functexcept.h \
+ /usr/include/c++/15/bits/exception_defines.h \
  /usr/include/c++/15/bits/cpp_type_traits.h \
- /usr/include/c++/15/ext/type_traits.h /usr/include/math.h \
+ /usr/include/c++/15/bits/version.h /usr/include/c++/15/type_traits \
+ /usr/include/c++/15/ext/type_traits.h \
+ /usr/include/c++/15/ext/numeric_traits.h \
+ /usr/include/c++/15/bits/stl_pair.h /usr/include/c++/15/bits/move.h \
+ /usr/include/c++/15/bits/utility.h \
+ /usr/include/c++/15/bits/stl_iterator_base_types.h \
+ /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/15/bits/concept_check.h \
+ /usr/include/c++/15/debug/assertions.h \
+ /usr/include/c++/15/bits/stl_iterator.h \
+ /usr/include/c++/15/bits/ptr_traits.h /usr/include/c++/15/debug/debug.h \
+ /usr/include/c++/15/bits/predefined_ops.h /usr/include/c++/15/bit \
+ /usr/include/c++/15/concepts /usr/include/c++/15/bits/stl_algo.h \
+ /usr/include/c++/15/bits/algorithmfwd.h \
+ /usr/include/c++/15/initializer_list /usr/include/c++/15/bits/stl_heap.h \
+ /usr/include/c++/15/bits/uniform_int_dist.h \
+ /usr/include/c++/15/bits/stl_tempbuf.h /usr/include/c++/15/new \
+ /usr/include/c++/15/bits/exception.h \
+ /usr/include/c++/15/bits/stl_construct.h /usr/include/c++/15/cstdlib \
+ /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/15/bits/std_abs.h /usr/include/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
@@ -70,42 +78,10 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/WindowImplX11.c
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/15/bits/specfun.h \
- /usr/include/c++/15/bits/stl_algobase.h \
- /usr/include/c++/15/bits/functexcept.h \
- /usr/include/c++/15/bits/exception_defines.h \
- /usr/include/c++/15/ext/numeric_traits.h \
- /usr/include/c++/15/bits/stl_pair.h /usr/include/c++/15/bits/move.h \
- /usr/include/c++/15/bits/utility.h \
- /usr/include/c++/15/bits/stl_iterator_base_types.h \
- /usr/include/c++/15/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/15/bits/concept_check.h \
- /usr/include/c++/15/debug/assertions.h \
- /usr/include/c++/15/bits/stl_iterator.h \
- /usr/include/c++/15/bits/ptr_traits.h /usr/include/c++/15/debug/debug.h \
- /usr/include/c++/15/bits/predefined_ops.h /usr/include/c++/15/bit \
- /usr/include/c++/15/concepts /usr/include/c++/15/limits \
- /usr/include/c++/15/tr1/gamma.tcc \
- /usr/include/c++/15/tr1/special_function_util.h \
- /usr/include/c++/15/tr1/bessel_function.tcc \
- /usr/include/c++/15/tr1/beta_function.tcc \
- /usr/include/c++/15/tr1/ell_integral.tcc \
- /usr/include/c++/15/tr1/exp_integral.tcc \
- /usr/include/c++/15/tr1/hypergeometric.tcc \
- /usr/include/c++/15/tr1/legendre_function.tcc \
- /usr/include/c++/15/tr1/modified_bessel_func.tcc \
- /usr/include/c++/15/tr1/poly_hermite.tcc \
- /usr/include/c++/15/tr1/poly_laguerre.tcc \
- /usr/include/c++/15/tr1/riemann_zeta.tcc \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/ClipboardImpl.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/WindowEnums.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/String.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Export.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
- /usr/include/c++/15/array /usr/include/c++/15/compare \
- /usr/include/c++/15/initializer_list \
- /usr/include/c++/15/bits/range_access.h /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/std_abs.h \
+ /usr/include/c++/15/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h \
  /usr/include/c++/15/clocale /usr/include/locale.h \
@@ -125,23 +101,21 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/WindowImplX11.c
  /usr/include/c++/15/bits/char_traits.h \
  /usr/include/c++/15/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++allocator.h \
- /usr/include/c++/15/bits/new_allocator.h /usr/include/c++/15/new \
- /usr/include/c++/15/bits/exception.h \
+ /usr/include/c++/15/bits/new_allocator.h \
  /usr/include/c++/15/bits/ostream_insert.h \
  /usr/include/c++/15/bits/cxxabi_forced.h \
  /usr/include/c++/15/bits/stl_function.h \
  /usr/include/c++/15/backward/binders.h \
  /usr/include/c++/15/bits/refwrap.h /usr/include/c++/15/bits/invoke.h \
+ /usr/include/c++/15/bits/range_access.h \
  /usr/include/c++/15/bits/basic_string.h \
  /usr/include/c++/15/ext/alloc_traits.h \
- /usr/include/c++/15/bits/alloc_traits.h \
- /usr/include/c++/15/bits/stl_construct.h /usr/include/c++/15/string_view \
+ /usr/include/c++/15/bits/alloc_traits.h /usr/include/c++/15/string_view \
  /usr/include/c++/15/bits/functional_hash.h \
  /usr/include/c++/15/bits/hash_bytes.h \
  /usr/include/c++/15/bits/string_view.tcc \
- /usr/include/c++/15/ext/string_conversions.h /usr/include/c++/15/cstdlib \
- /usr/include/c++/15/cstdio /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/c++/15/ext/string_conversions.h /usr/include/c++/15/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
@@ -200,105 +174,91 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/WindowImplX11.c
  /usr/include/x86_64-linux-gnu/c++/15/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
  /usr/include/c++/15/bits/locale_facets_nonio.tcc \
- /usr/include/c++/15/bits/locale_conv.h /usr/include/c++/15/optional \
- /usr/include/c++/15/bits/enable_special_members.h \
- /usr/include/c++/15/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/15/bits/locale_conv.h \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Utf.inl \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Err.hpp \
  /usr/include/c++/15/iterator /usr/include/c++/15/bits/stream_iterator.h \
- /usr/include/c++/15/ostream /usr/include/c++/15/bits/ostream.h \
- /usr/include/c++/15/ios /usr/include/c++/15/bits/basic_ios.h \
- /usr/include/c++/15/bits/basic_ios.tcc \
- /usr/include/c++/15/bits/ostream.tcc \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/String.inl \
- /usr/include/X11/Xlib.h /usr/include/X11/X.h \
- /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
- /usr/include/c++/15/memory /usr/include/c++/15/bits/stl_tempbuf.h \
- /usr/include/c++/15/bits/stl_uninitialized.h \
- /usr/include/c++/15/bits/stl_raw_storage_iter.h \
- /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
- /usr/include/c++/15/bits/shared_ptr.h \
- /usr/include/c++/15/bits/shared_ptr_base.h \
- /usr/include/c++/15/bits/allocated_ptr.h \
- /usr/include/c++/15/ext/aligned_buffer.h \
- /usr/include/c++/15/ext/concurrence.h \
- /usr/include/c++/15/bits/shared_ptr_atomic.h \
- /usr/include/c++/15/bits/atomic_base.h \
- /usr/include/c++/15/bits/atomic_lockfree_defines.h \
- /usr/include/c++/15/backward/auto_ptr.h \
- /usr/include/c++/15/pstl/glue_memory_defs.h \
- /usr/include/c++/15/pstl/execution_defs.h /usr/include/c++/15/queue \
- /usr/include/c++/15/deque /usr/include/c++/15/bits/stl_deque.h \
- /usr/include/c++/15/bits/deque.tcc /usr/include/c++/15/vector \
- /usr/include/c++/15/bits/stl_vector.h \
- /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/bits/stl_heap.h \
- /usr/include/c++/15/bits/stl_queue.h \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/Display.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/KeyboardImpl.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/Utils.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/WindowImplX11.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Event.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Joystick.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Sensor.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Vector3.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Vector3.inl \
- /usr/include/c++/15/variant /usr/include/c++/15/bits/monostate.h \
- /usr/include/c++/15/bits/parse_numbers.h \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Event.inl \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Time.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/WindowImpl.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/CursorImpl.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/CursorImpl.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+ /usr/include/X11/Xlib.h /usr/include/X11/X.h \
+ /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/JoystickImpl.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/JoystickImpl.hpp \
+ /usr/include/linux/input.h /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/x86_64-linux-gnu/sys/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctls.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h /usr/include/linux/sockios.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
+ /usr/include/linux/input-event-codes.h \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/SensorImpl.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/SensorImpl.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
+ /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/System/EnumArray.hpp \
- /usr/include/X11/extensions/Xrandr.h /usr/include/X11/extensions/randr.h \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Window.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/WindowBase.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
+ /usr/include/c++/15/queue /usr/include/c++/15/deque \
+ /usr/include/c++/15/bits/stl_deque.h /usr/include/c++/15/bits/deque.tcc \
+ /usr/include/c++/15/bits/stl_queue.h /usr/include/c++/15/set \
+ /usr/include/c++/15/bits/stl_tree.h \
+ /usr/include/c++/15/ext/aligned_buffer.h \
+ /usr/include/c++/15/bits/node_handle.h \
+ /usr/include/c++/15/bits/stl_set.h \
+ /usr/include/c++/15/bits/stl_multiset.h \
+ /usr/include/c++/15/bits/erase_if.h /usr/include/X11/extensions/Xrandr.h \
+ /usr/include/X11/extensions/randr.h \
  /usr/include/X11/extensions/Xrender.h /usr/include/X11/Xutil.h \
  /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
  /usr/include/X11/extensions/render.h /usr/include/X11/Xdefs.h \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/ClipboardImpl.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/Display.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/InputImpl.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/KeyboardImpl.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Err.hpp \
+ /usr/include/c++/15/ostream /usr/include/c++/15/bits/ostream.h \
+ /usr/include/c++/15/ios /usr/include/c++/15/bits/basic_ios.h \
+ /usr/include/c++/15/bits/basic_ios.tcc \
+ /usr/include/c++/15/bits/ostream.tcc \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Mutex.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Lock.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Sleep.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Time.hpp \
- /usr/include/c++/15/chrono /usr/include/c++/15/bits/chrono.h \
- /usr/include/c++/15/ratio \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/System/Time.inl \
- /usr/include/X11/Xlibint.h /usr/include/X11/Xproto.h \
- /usr/include/X11/Xmd.h /usr/include/X11/Xprotostr.h \
- /usr/include/X11/XlibConf.h /usr/include/X11/Xthreads.h \
- /usr/include/X11/Xfuncs.h /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/15/bitset /usr/include/X11/Xlibint.h \
+ /usr/include/X11/Xproto.h /usr/include/X11/Xmd.h \
+ /usr/include/X11/Xprotostr.h /usr/include/X11/XlibConf.h \
+ /usr/include/X11/Xthreads.h /usr/include/X11/Xfuncs.h \
+ /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/15/stdlib.h /usr/include/X11/Xatom.h \
- /usr/include/X11/extensions/XInput2.h /usr/include/X11/extensions/XI2.h \
- /usr/include/X11/extensions/Xge.h /usr/include/X11/extensions/Xfixes.h \
- /usr/include/X11/extensions/xfixeswire.h /usr/include/c++/15/algorithm \
- /usr/include/c++/15/bits/stl_algo.h \
- /usr/include/c++/15/bits/algorithmfwd.h \
- /usr/include/c++/15/bits/uniform_int_dist.h \
- /usr/include/c++/15/pstl/glue_algorithm_defs.h \
- /usr/include/c++/15/bitset /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/linux/openat2.h \
- /usr/include/x86_64-linux-gnu/bits/openat2.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
- /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/iomanip \
- /usr/include/c++/15/bits/quoted_string.h /usr/include/c++/15/sstream \
- /usr/include/c++/15/istream /usr/include/c++/15/bits/istream.tcc \
- /usr/include/c++/15/bits/sstream.tcc /usr/include/c++/15/codecvt \
- /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
- /usr/include/libgen.h /usr/include/c++/15/mutex \
- /usr/include/c++/15/bits/std_mutex.h \
- /usr/include/c++/15/bits/unique_lock.h \
- /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
@@ -309,11 +269,16 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Unix/WindowImplX11.c
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/c++/15/cstring \
+ /usr/include/linux/close_range.h /usr/include/libgen.h \
+ /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/linux/openat2.h \
+ /usr/include/x86_64-linux-gnu/bits/openat2.h /usr/include/c++/15/cstring \
+ /usr/include/c++/15/cassert /usr/include/assert.h \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/GlxContext.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/GlContext.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/extlibs/headers/glad/include/glad/glx.h \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
  /usr/include/inttypes.h

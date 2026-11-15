@@ -68,6 +68,26 @@ CMAKE_BINARY_DIR = /home/mareluca675/Work/shooter-game/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -90,7 +110,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"bin\" \"devel\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -140,6 +160,13 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
 .PHONY : all
 
+# The main codegen target
+codegen: cmake_check_build_system
+	cd /home/mareluca675/Work/shooter-game/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Audio//CMakeFiles/progress.marks
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Audio/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
+.PHONY : codegen
+
 # The main clean target
 clean:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Audio/clean
@@ -178,6 +205,54 @@ sfml-audio/fast:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
+ALCheck.o: ALCheck.cpp.o
+.PHONY : ALCheck.o
+
+# target to build an object file
+ALCheck.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.o
+.PHONY : ALCheck.cpp.o
+
+ALCheck.i: ALCheck.cpp.i
+.PHONY : ALCheck.i
+
+# target to preprocess a source file
+ALCheck.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.i
+.PHONY : ALCheck.cpp.i
+
+ALCheck.s: ALCheck.cpp.s
+.PHONY : ALCheck.s
+
+# target to generate assembly for a file
+ALCheck.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/ALCheck.cpp.s
+.PHONY : ALCheck.cpp.s
+
+AlResource.o: AlResource.cpp.o
+.PHONY : AlResource.o
+
+# target to build an object file
+AlResource.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.o
+.PHONY : AlResource.cpp.o
+
+AlResource.i: AlResource.cpp.i
+.PHONY : AlResource.i
+
+# target to preprocess a source file
+AlResource.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.i
+.PHONY : AlResource.cpp.i
+
+AlResource.s: AlResource.cpp.s
+.PHONY : AlResource.s
+
+# target to generate assembly for a file
+AlResource.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AlResource.cpp.s
+.PHONY : AlResource.cpp.s
+
 AudioDevice.o: AudioDevice.cpp.o
 .PHONY : AudioDevice.o
 
@@ -201,30 +276,6 @@ AudioDevice.s: AudioDevice.cpp.s
 AudioDevice.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioDevice.cpp.s
 .PHONY : AudioDevice.cpp.s
-
-AudioResource.o: AudioResource.cpp.o
-.PHONY : AudioResource.o
-
-# target to build an object file
-AudioResource.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioResource.cpp.o
-.PHONY : AudioResource.cpp.o
-
-AudioResource.i: AudioResource.cpp.i
-.PHONY : AudioResource.i
-
-# target to preprocess a source file
-AudioResource.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioResource.cpp.i
-.PHONY : AudioResource.cpp.i
-
-AudioResource.s: AudioResource.cpp.s
-.PHONY : AudioResource.s
-
-# target to generate assembly for a file
-AudioResource.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/AudioResource.cpp.s
-.PHONY : AudioResource.cpp.s
 
 InputSoundFile.o: InputSoundFile.cpp.o
 .PHONY : InputSoundFile.o
@@ -274,54 +325,6 @@ Listener.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Listener.cpp.s
 .PHONY : Listener.cpp.s
 
-Miniaudio.o: Miniaudio.cpp.o
-.PHONY : Miniaudio.o
-
-# target to build an object file
-Miniaudio.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Miniaudio.cpp.o
-.PHONY : Miniaudio.cpp.o
-
-Miniaudio.i: Miniaudio.cpp.i
-.PHONY : Miniaudio.i
-
-# target to preprocess a source file
-Miniaudio.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Miniaudio.cpp.i
-.PHONY : Miniaudio.cpp.i
-
-Miniaudio.s: Miniaudio.cpp.s
-.PHONY : Miniaudio.s
-
-# target to generate assembly for a file
-Miniaudio.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/Miniaudio.cpp.s
-.PHONY : Miniaudio.cpp.s
-
-MiniaudioUtils.o: MiniaudioUtils.cpp.o
-.PHONY : MiniaudioUtils.o
-
-# target to build an object file
-MiniaudioUtils.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/MiniaudioUtils.cpp.o
-.PHONY : MiniaudioUtils.cpp.o
-
-MiniaudioUtils.i: MiniaudioUtils.cpp.i
-.PHONY : MiniaudioUtils.i
-
-# target to preprocess a source file
-MiniaudioUtils.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/MiniaudioUtils.cpp.i
-.PHONY : MiniaudioUtils.cpp.i
-
-MiniaudioUtils.s: MiniaudioUtils.cpp.s
-.PHONY : MiniaudioUtils.s
-
-# target to generate assembly for a file
-MiniaudioUtils.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/MiniaudioUtils.cpp.s
-.PHONY : MiniaudioUtils.cpp.s
-
 Music.o: Music.cpp.o
 .PHONY : Music.o
 
@@ -369,30 +372,6 @@ OutputSoundFile.s: OutputSoundFile.cpp.s
 OutputSoundFile.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/OutputSoundFile.cpp.s
 .PHONY : OutputSoundFile.cpp.s
-
-PlaybackDevice.o: PlaybackDevice.cpp.o
-.PHONY : PlaybackDevice.o
-
-# target to build an object file
-PlaybackDevice.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/PlaybackDevice.cpp.o
-.PHONY : PlaybackDevice.cpp.o
-
-PlaybackDevice.i: PlaybackDevice.cpp.i
-.PHONY : PlaybackDevice.i
-
-# target to preprocess a source file
-PlaybackDevice.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/PlaybackDevice.cpp.i
-.PHONY : PlaybackDevice.cpp.i
-
-PlaybackDevice.s: PlaybackDevice.cpp.s
-.PHONY : PlaybackDevice.s
-
-# target to generate assembly for a file
-PlaybackDevice.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/PlaybackDevice.cpp.s
-.PHONY : PlaybackDevice.cpp.s
 
 Sound.o: Sound.cpp.o
 .PHONY : Sound.o
@@ -736,40 +715,37 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... sfml-audio"
+	@echo "... ALCheck.o"
+	@echo "... ALCheck.i"
+	@echo "... ALCheck.s"
+	@echo "... AlResource.o"
+	@echo "... AlResource.i"
+	@echo "... AlResource.s"
 	@echo "... AudioDevice.o"
 	@echo "... AudioDevice.i"
 	@echo "... AudioDevice.s"
-	@echo "... AudioResource.o"
-	@echo "... AudioResource.i"
-	@echo "... AudioResource.s"
 	@echo "... InputSoundFile.o"
 	@echo "... InputSoundFile.i"
 	@echo "... InputSoundFile.s"
 	@echo "... Listener.o"
 	@echo "... Listener.i"
 	@echo "... Listener.s"
-	@echo "... Miniaudio.o"
-	@echo "... Miniaudio.i"
-	@echo "... Miniaudio.s"
-	@echo "... MiniaudioUtils.o"
-	@echo "... MiniaudioUtils.i"
-	@echo "... MiniaudioUtils.s"
 	@echo "... Music.o"
 	@echo "... Music.i"
 	@echo "... Music.s"
 	@echo "... OutputSoundFile.o"
 	@echo "... OutputSoundFile.i"
 	@echo "... OutputSoundFile.s"
-	@echo "... PlaybackDevice.o"
-	@echo "... PlaybackDevice.i"
-	@echo "... PlaybackDevice.s"
 	@echo "... Sound.o"
 	@echo "... Sound.i"
 	@echo "... Sound.s"

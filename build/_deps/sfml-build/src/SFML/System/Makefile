@@ -68,6 +68,26 @@ CMAKE_BINARY_DIR = /home/mareluca675/Work/shooter-game/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -90,7 +110,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"bin\" \"devel\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -139,6 +159,13 @@ all: cmake_check_build_system
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/System/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
 .PHONY : all
+
+# The main codegen target
+codegen: cmake_check_build_system
+	cd /home/mareluca675/Work/shooter-game/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/System//CMakeFiles/progress.marks
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/System/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
+.PHONY : codegen
 
 # The main clean target
 clean:
@@ -250,6 +277,30 @@ FileInputStream.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.s
 .PHONY : FileInputStream.cpp.s
 
+Lock.o: Lock.cpp.o
+.PHONY : Lock.o
+
+# target to build an object file
+Lock.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.o
+.PHONY : Lock.cpp.o
+
+Lock.i: Lock.cpp.i
+.PHONY : Lock.i
+
+# target to preprocess a source file
+Lock.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.i
+.PHONY : Lock.cpp.i
+
+Lock.s: Lock.cpp.s
+.PHONY : Lock.s
+
+# target to generate assembly for a file
+Lock.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Lock.cpp.s
+.PHONY : Lock.cpp.s
+
 MemoryInputStream.o: MemoryInputStream.cpp.o
 .PHONY : MemoryInputStream.o
 
@@ -273,6 +324,30 @@ MemoryInputStream.s: MemoryInputStream.cpp.s
 MemoryInputStream.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.s
 .PHONY : MemoryInputStream.cpp.s
+
+Mutex.o: Mutex.cpp.o
+.PHONY : Mutex.o
+
+# target to build an object file
+Mutex.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.o
+.PHONY : Mutex.cpp.o
+
+Mutex.i: Mutex.cpp.i
+.PHONY : Mutex.i
+
+# target to preprocess a source file
+Mutex.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.i
+.PHONY : Mutex.cpp.i
+
+Mutex.s: Mutex.cpp.s
+.PHONY : Mutex.s
+
+# target to generate assembly for a file
+Mutex.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Mutex.cpp.s
+.PHONY : Mutex.cpp.s
 
 Sleep.o: Sleep.cpp.o
 .PHONY : Sleep.o
@@ -322,29 +397,125 @@ String.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/String.cpp.s
 .PHONY : String.cpp.s
 
-TimeoutWithPredicate.o: TimeoutWithPredicate.cpp.o
-.PHONY : TimeoutWithPredicate.o
+Thread.o: Thread.cpp.o
+.PHONY : Thread.o
 
 # target to build an object file
-TimeoutWithPredicate.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.o
-.PHONY : TimeoutWithPredicate.cpp.o
+Thread.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.o
+.PHONY : Thread.cpp.o
 
-TimeoutWithPredicate.i: TimeoutWithPredicate.cpp.i
-.PHONY : TimeoutWithPredicate.i
+Thread.i: Thread.cpp.i
+.PHONY : Thread.i
 
 # target to preprocess a source file
-TimeoutWithPredicate.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.i
-.PHONY : TimeoutWithPredicate.cpp.i
+Thread.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.i
+.PHONY : Thread.cpp.i
 
-TimeoutWithPredicate.s: TimeoutWithPredicate.cpp.s
-.PHONY : TimeoutWithPredicate.s
+Thread.s: Thread.cpp.s
+.PHONY : Thread.s
 
 # target to generate assembly for a file
-TimeoutWithPredicate.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/TimeoutWithPredicate.cpp.s
-.PHONY : TimeoutWithPredicate.cpp.s
+Thread.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Thread.cpp.s
+.PHONY : Thread.cpp.s
+
+ThreadLocal.o: ThreadLocal.cpp.o
+.PHONY : ThreadLocal.o
+
+# target to build an object file
+ThreadLocal.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.o
+.PHONY : ThreadLocal.cpp.o
+
+ThreadLocal.i: ThreadLocal.cpp.i
+.PHONY : ThreadLocal.i
+
+# target to preprocess a source file
+ThreadLocal.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.i
+.PHONY : ThreadLocal.cpp.i
+
+ThreadLocal.s: ThreadLocal.cpp.s
+.PHONY : ThreadLocal.s
+
+# target to generate assembly for a file
+ThreadLocal.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/ThreadLocal.cpp.s
+.PHONY : ThreadLocal.cpp.s
+
+Time.o: Time.cpp.o
+.PHONY : Time.o
+
+# target to build an object file
+Time.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.o
+.PHONY : Time.cpp.o
+
+Time.i: Time.cpp.i
+.PHONY : Time.i
+
+# target to preprocess a source file
+Time.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.i
+.PHONY : Time.cpp.i
+
+Time.s: Time.cpp.s
+.PHONY : Time.s
+
+# target to generate assembly for a file
+Time.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Time.cpp.s
+.PHONY : Time.cpp.s
+
+Unix/ClockImpl.o: Unix/ClockImpl.cpp.o
+.PHONY : Unix/ClockImpl.o
+
+# target to build an object file
+Unix/ClockImpl.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.o
+.PHONY : Unix/ClockImpl.cpp.o
+
+Unix/ClockImpl.i: Unix/ClockImpl.cpp.i
+.PHONY : Unix/ClockImpl.i
+
+# target to preprocess a source file
+Unix/ClockImpl.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.i
+.PHONY : Unix/ClockImpl.cpp.i
+
+Unix/ClockImpl.s: Unix/ClockImpl.cpp.s
+.PHONY : Unix/ClockImpl.s
+
+# target to generate assembly for a file
+Unix/ClockImpl.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ClockImpl.cpp.s
+.PHONY : Unix/ClockImpl.cpp.s
+
+Unix/MutexImpl.o: Unix/MutexImpl.cpp.o
+.PHONY : Unix/MutexImpl.o
+
+# target to build an object file
+Unix/MutexImpl.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.o
+.PHONY : Unix/MutexImpl.cpp.o
+
+Unix/MutexImpl.i: Unix/MutexImpl.cpp.i
+.PHONY : Unix/MutexImpl.i
+
+# target to preprocess a source file
+Unix/MutexImpl.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.i
+.PHONY : Unix/MutexImpl.cpp.i
+
+Unix/MutexImpl.s: Unix/MutexImpl.cpp.s
+.PHONY : Unix/MutexImpl.s
+
+# target to generate assembly for a file
+Unix/MutexImpl.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/MutexImpl.cpp.s
+.PHONY : Unix/MutexImpl.cpp.s
 
 Unix/SleepImpl.o: Unix/SleepImpl.cpp.o
 .PHONY : Unix/SleepImpl.o
@@ -370,53 +541,53 @@ Unix/SleepImpl.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/SleepImpl.cpp.s
 .PHONY : Unix/SleepImpl.cpp.s
 
-Utils.o: Utils.cpp.o
-.PHONY : Utils.o
+Unix/ThreadImpl.o: Unix/ThreadImpl.cpp.o
+.PHONY : Unix/ThreadImpl.o
 
 # target to build an object file
-Utils.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.o
-.PHONY : Utils.cpp.o
+Unix/ThreadImpl.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o
+.PHONY : Unix/ThreadImpl.cpp.o
 
-Utils.i: Utils.cpp.i
-.PHONY : Utils.i
+Unix/ThreadImpl.i: Unix/ThreadImpl.cpp.i
+.PHONY : Unix/ThreadImpl.i
 
 # target to preprocess a source file
-Utils.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.i
-.PHONY : Utils.cpp.i
+Unix/ThreadImpl.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.i
+.PHONY : Unix/ThreadImpl.cpp.i
 
-Utils.s: Utils.cpp.s
-.PHONY : Utils.s
+Unix/ThreadImpl.s: Unix/ThreadImpl.cpp.s
+.PHONY : Unix/ThreadImpl.s
 
 # target to generate assembly for a file
-Utils.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Utils.cpp.s
-.PHONY : Utils.cpp.s
+Unix/ThreadImpl.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.s
+.PHONY : Unix/ThreadImpl.cpp.s
 
-Version.o: Version.cpp.o
-.PHONY : Version.o
+Unix/ThreadLocalImpl.o: Unix/ThreadLocalImpl.cpp.o
+.PHONY : Unix/ThreadLocalImpl.o
 
 # target to build an object file
-Version.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.o
-.PHONY : Version.cpp.o
+Unix/ThreadLocalImpl.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.o
+.PHONY : Unix/ThreadLocalImpl.cpp.o
 
-Version.i: Version.cpp.i
-.PHONY : Version.i
+Unix/ThreadLocalImpl.i: Unix/ThreadLocalImpl.cpp.i
+.PHONY : Unix/ThreadLocalImpl.i
 
 # target to preprocess a source file
-Version.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.i
-.PHONY : Version.cpp.i
+Unix/ThreadLocalImpl.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.i
+.PHONY : Unix/ThreadLocalImpl.cpp.i
 
-Version.s: Version.cpp.s
-.PHONY : Version.s
+Unix/ThreadLocalImpl.s: Unix/ThreadLocalImpl.cpp.s
+.PHONY : Unix/ThreadLocalImpl.s
 
 # target to generate assembly for a file
-Version.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Version.cpp.s
-.PHONY : Version.cpp.s
+Unix/ThreadLocalImpl.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadLocalImpl.cpp.s
+.PHONY : Unix/ThreadLocalImpl.cpp.s
 
 # Help Target
 help:
@@ -424,11 +595,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... sfml-system"
 	@echo "... Clock.o"
@@ -440,27 +614,45 @@ help:
 	@echo "... FileInputStream.o"
 	@echo "... FileInputStream.i"
 	@echo "... FileInputStream.s"
+	@echo "... Lock.o"
+	@echo "... Lock.i"
+	@echo "... Lock.s"
 	@echo "... MemoryInputStream.o"
 	@echo "... MemoryInputStream.i"
 	@echo "... MemoryInputStream.s"
+	@echo "... Mutex.o"
+	@echo "... Mutex.i"
+	@echo "... Mutex.s"
 	@echo "... Sleep.o"
 	@echo "... Sleep.i"
 	@echo "... Sleep.s"
 	@echo "... String.o"
 	@echo "... String.i"
 	@echo "... String.s"
-	@echo "... TimeoutWithPredicate.o"
-	@echo "... TimeoutWithPredicate.i"
-	@echo "... TimeoutWithPredicate.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
+	@echo "... ThreadLocal.o"
+	@echo "... ThreadLocal.i"
+	@echo "... ThreadLocal.s"
+	@echo "... Time.o"
+	@echo "... Time.i"
+	@echo "... Time.s"
+	@echo "... Unix/ClockImpl.o"
+	@echo "... Unix/ClockImpl.i"
+	@echo "... Unix/ClockImpl.s"
+	@echo "... Unix/MutexImpl.o"
+	@echo "... Unix/MutexImpl.i"
+	@echo "... Unix/MutexImpl.s"
 	@echo "... Unix/SleepImpl.o"
 	@echo "... Unix/SleepImpl.i"
 	@echo "... Unix/SleepImpl.s"
-	@echo "... Utils.o"
-	@echo "... Utils.i"
-	@echo "... Utils.s"
-	@echo "... Version.o"
-	@echo "... Version.i"
-	@echo "... Version.s"
+	@echo "... Unix/ThreadImpl.o"
+	@echo "... Unix/ThreadImpl.i"
+	@echo "... Unix/ThreadImpl.s"
+	@echo "... Unix/ThreadLocalImpl.o"
+	@echo "... Unix/ThreadLocalImpl.i"
+	@echo "... Unix/ThreadLocalImpl.s"
 .PHONY : help
 
 

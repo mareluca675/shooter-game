@@ -68,6 +68,26 @@ CMAKE_BINARY_DIR = /home/mareluca675/Work/shooter-game/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -90,7 +110,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"bin\" \"devel\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -139,6 +159,13 @@ all: cmake_check_build_system
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/candle-build/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
 .PHONY : all
+
+# The main codegen target
+codegen: cmake_check_build_system
+	cd /home/mareluca675/Work/shooter-game/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles /home/mareluca675/Work/shooter-game/build/_deps/candle-build//CMakeFiles/progress.marks
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/candle-build/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
+.PHONY : codegen
 
 # The main clean target
 clean:
@@ -400,11 +427,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... Candle-s"
 	@echo "... src/Color.o"

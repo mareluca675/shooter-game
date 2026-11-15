@@ -68,6 +68,26 @@ CMAKE_BINARY_DIR = /home/mareluca675/Work/shooter-game/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -90,7 +110,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"bin\" \"devel\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -139,6 +159,13 @@ all: cmake_check_build_system
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Graphics/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
 .PHONY : all
+
+# The main codegen target
+codegen: cmake_check_build_system
+	cd /home/mareluca675/Work/shooter-game/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Graphics//CMakeFiles/progress.marks
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Graphics/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
+.PHONY : codegen
 
 # The main clean target
 clean:
@@ -225,6 +252,30 @@ CircleShape.s: CircleShape.cpp.s
 CircleShape.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.s
 .PHONY : CircleShape.cpp.s
+
+Color.o: Color.cpp.o
+.PHONY : Color.o
+
+# target to build an object file
+Color.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.o
+.PHONY : Color.cpp.o
+
+Color.i: Color.cpp.i
+.PHONY : Color.i
+
+# target to preprocess a source file
+Color.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.i
+.PHONY : Color.cpp.i
+
+Color.s: Color.cpp.s
+.PHONY : Color.s
+
+# target to generate assembly for a file
+Color.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.s
+.PHONY : Color.cpp.s
 
 ConvexShape.o: ConvexShape.cpp.o
 .PHONY : ConvexShape.o
@@ -370,6 +421,30 @@ Image.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.s
 .PHONY : Image.cpp.s
 
+ImageLoader.o: ImageLoader.cpp.o
+.PHONY : ImageLoader.o
+
+# target to build an object file
+ImageLoader.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.o
+.PHONY : ImageLoader.cpp.o
+
+ImageLoader.i: ImageLoader.cpp.i
+.PHONY : ImageLoader.i
+
+# target to preprocess a source file
+ImageLoader.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.i
+.PHONY : ImageLoader.cpp.i
+
+ImageLoader.s: ImageLoader.cpp.s
+.PHONY : ImageLoader.s
+
+# target to generate assembly for a file
+ImageLoader.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.s
+.PHONY : ImageLoader.cpp.s
+
 RectangleShape.o: RectangleShape.cpp.o
 .PHONY : RectangleShape.o
 
@@ -465,6 +540,30 @@ RenderTexture.s: RenderTexture.cpp.s
 RenderTexture.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.s
 .PHONY : RenderTexture.cpp.s
+
+RenderTextureImpl.o: RenderTextureImpl.cpp.o
+.PHONY : RenderTextureImpl.o
+
+# target to build an object file
+RenderTextureImpl.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.o
+.PHONY : RenderTextureImpl.cpp.o
+
+RenderTextureImpl.i: RenderTextureImpl.cpp.i
+.PHONY : RenderTextureImpl.i
+
+# target to preprocess a source file
+RenderTextureImpl.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.i
+.PHONY : RenderTextureImpl.cpp.i
+
+RenderTextureImpl.s: RenderTextureImpl.cpp.s
+.PHONY : RenderTextureImpl.s
+
+# target to generate assembly for a file
+RenderTextureImpl.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.s
+.PHONY : RenderTextureImpl.cpp.s
 
 RenderTextureImplDefault.o: RenderTextureImplDefault.cpp.o
 .PHONY : RenderTextureImplDefault.o
@@ -610,30 +709,6 @@ Sprite.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.s
 .PHONY : Sprite.cpp.s
 
-StencilMode.o: StencilMode.cpp.o
-.PHONY : StencilMode.o
-
-# target to build an object file
-StencilMode.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/StencilMode.cpp.o
-.PHONY : StencilMode.cpp.o
-
-StencilMode.i: StencilMode.cpp.i
-.PHONY : StencilMode.i
-
-# target to preprocess a source file
-StencilMode.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/StencilMode.cpp.i
-.PHONY : StencilMode.cpp.i
-
-StencilMode.s: StencilMode.cpp.s
-.PHONY : StencilMode.s
-
-# target to generate assembly for a file
-StencilMode.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/StencilMode.cpp.s
-.PHONY : StencilMode.cpp.s
-
 Text.o: Text.cpp.o
 .PHONY : Text.o
 
@@ -754,6 +829,30 @@ Transformable.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cpp.s
 .PHONY : Transformable.cpp.s
 
+Vertex.o: Vertex.cpp.o
+.PHONY : Vertex.o
+
+# target to build an object file
+Vertex.cpp.o:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.o
+.PHONY : Vertex.cpp.o
+
+Vertex.i: Vertex.cpp.i
+.PHONY : Vertex.i
+
+# target to preprocess a source file
+Vertex.cpp.i:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.i
+.PHONY : Vertex.cpp.i
+
+Vertex.s: Vertex.cpp.s
+.PHONY : Vertex.s
+
+# target to generate assembly for a file
+Vertex.cpp.s:
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.s
+.PHONY : Vertex.cpp.s
+
 VertexArray.o: VertexArray.cpp.o
 .PHONY : VertexArray.o
 
@@ -832,11 +931,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... sfml-graphics"
 	@echo "... BlendMode.o"
@@ -845,6 +947,9 @@ help:
 	@echo "... CircleShape.o"
 	@echo "... CircleShape.i"
 	@echo "... CircleShape.s"
+	@echo "... Color.o"
+	@echo "... Color.i"
+	@echo "... Color.s"
 	@echo "... ConvexShape.o"
 	@echo "... ConvexShape.i"
 	@echo "... ConvexShape.s"
@@ -863,6 +968,9 @@ help:
 	@echo "... Image.o"
 	@echo "... Image.i"
 	@echo "... Image.s"
+	@echo "... ImageLoader.o"
+	@echo "... ImageLoader.i"
+	@echo "... ImageLoader.s"
 	@echo "... RectangleShape.o"
 	@echo "... RectangleShape.i"
 	@echo "... RectangleShape.s"
@@ -875,6 +983,9 @@ help:
 	@echo "... RenderTexture.o"
 	@echo "... RenderTexture.i"
 	@echo "... RenderTexture.s"
+	@echo "... RenderTextureImpl.o"
+	@echo "... RenderTextureImpl.i"
+	@echo "... RenderTextureImpl.s"
 	@echo "... RenderTextureImplDefault.o"
 	@echo "... RenderTextureImplDefault.i"
 	@echo "... RenderTextureImplDefault.s"
@@ -893,9 +1004,6 @@ help:
 	@echo "... Sprite.o"
 	@echo "... Sprite.i"
 	@echo "... Sprite.s"
-	@echo "... StencilMode.o"
-	@echo "... StencilMode.i"
-	@echo "... StencilMode.s"
 	@echo "... Text.o"
 	@echo "... Text.i"
 	@echo "... Text.s"
@@ -911,6 +1019,9 @@ help:
 	@echo "... Transformable.o"
 	@echo "... Transformable.i"
 	@echo "... Transformable.s"
+	@echo "... Vertex.o"
+	@echo "... Vertex.i"
+	@echo "... Vertex.s"
 	@echo "... VertexArray.o"
 	@echo "... VertexArray.i"
 	@echo "... VertexArray.s"

@@ -145,13 +145,73 @@ CMakeFiles/main.dir/bullet/bullet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/bullet/bullet.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/bullet/bullet.cpp -o CMakeFiles/main.dir/bullet/bullet.cpp.s
 
+CMakeFiles/main.dir/map/map.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/map/map.cpp.o: /home/mareluca675/Work/shooter-game/map/map.cpp
+CMakeFiles/main.dir/map/map.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/map/map.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/map/map.cpp.o -MF CMakeFiles/main.dir/map/map.cpp.o.d -o CMakeFiles/main.dir/map/map.cpp.o -c /home/mareluca675/Work/shooter-game/map/map.cpp
+
+CMakeFiles/main.dir/map/map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/map/map.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/map/map.cpp > CMakeFiles/main.dir/map/map.cpp.i
+
+CMakeFiles/main.dir/map/map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/map/map.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/map/map.cpp -o CMakeFiles/main.dir/map/map.cpp.s
+
+CMakeFiles/main.dir/map/room.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/map/room.cpp.o: /home/mareluca675/Work/shooter-game/map/room.cpp
+CMakeFiles/main.dir/map/room.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/map/room.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/map/room.cpp.o -MF CMakeFiles/main.dir/map/room.cpp.o.d -o CMakeFiles/main.dir/map/room.cpp.o -c /home/mareluca675/Work/shooter-game/map/room.cpp
+
+CMakeFiles/main.dir/map/room.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/map/room.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/map/room.cpp > CMakeFiles/main.dir/map/room.cpp.i
+
+CMakeFiles/main.dir/map/room.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/map/room.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/map/room.cpp -o CMakeFiles/main.dir/map/room.cpp.s
+
+CMakeFiles/main.dir/map/rng.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/map/rng.cpp.o: /home/mareluca675/Work/shooter-game/map/rng.cpp
+CMakeFiles/main.dir/map/rng.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/map/rng.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/map/rng.cpp.o -MF CMakeFiles/main.dir/map/rng.cpp.o.d -o CMakeFiles/main.dir/map/rng.cpp.o -c /home/mareluca675/Work/shooter-game/map/rng.cpp
+
+CMakeFiles/main.dir/map/rng.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/map/rng.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/map/rng.cpp > CMakeFiles/main.dir/map/rng.cpp.i
+
+CMakeFiles/main.dir/map/rng.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/map/rng.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/map/rng.cpp -o CMakeFiles/main.dir/map/rng.cpp.s
+
+CMakeFiles/main.dir/map/util.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/map/util.cpp.o: /home/mareluca675/Work/shooter-game/map/util.cpp
+CMakeFiles/main.dir/map/util.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/map/util.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/map/util.cpp.o -MF CMakeFiles/main.dir/map/util.cpp.o.d -o CMakeFiles/main.dir/map/util.cpp.o -c /home/mareluca675/Work/shooter-game/map/util.cpp
+
+CMakeFiles/main.dir/map/util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/map/util.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mareluca675/Work/shooter-game/map/util.cpp > CMakeFiles/main.dir/map/util.cpp.i
+
+CMakeFiles/main.dir/map/util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/map/util.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mareluca675/Work/shooter-game/map/util.cpp -o CMakeFiles/main.dir/map/util.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/game/game.cpp.o" \
 "CMakeFiles/main.dir/item/item.cpp.o" \
 "CMakeFiles/main.dir/player/player.cpp.o" \
-"CMakeFiles/main.dir/bullet/bullet.cpp.o"
+"CMakeFiles/main.dir/bullet/bullet.cpp.o" \
+"CMakeFiles/main.dir/map/map.cpp.o" \
+"CMakeFiles/main.dir/map/room.cpp.o" \
+"CMakeFiles/main.dir/map/rng.cpp.o" \
+"CMakeFiles/main.dir/map/util.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -161,35 +221,20 @@ bin/main: CMakeFiles/main.dir/game/game.cpp.o
 bin/main: CMakeFiles/main.dir/item/item.cpp.o
 bin/main: CMakeFiles/main.dir/player/player.cpp.o
 bin/main: CMakeFiles/main.dir/bullet/bullet.cpp.o
+bin/main: CMakeFiles/main.dir/map/map.cpp.o
+bin/main: CMakeFiles/main.dir/map/room.cpp.o
+bin/main: CMakeFiles/main.dir/map/rng.cpp.o
+bin/main: CMakeFiles/main.dir/map/util.cpp.o
 bin/main: CMakeFiles/main.dir/build.make
 bin/main: CMakeFiles/main.dir/compiler_depend.ts
-bin/main: _deps/sfml-build/lib/libsfml-graphics.a
-bin/main: _deps/sfml-build/lib/libsfml-window.a
-bin/main: _deps/sfml-build/lib/libsfml-network.a
-bin/main: _deps/sfml-build/lib/libsfml-audio.a
-bin/main: /usr/lib/x86_64-linux-gnu/libXrandr.so
-bin/main: /usr/lib/x86_64-linux-gnu/libXcursor.so
-bin/main: /usr/lib/x86_64-linux-gnu/libXrender.so
-bin/main: /usr/lib/x86_64-linux-gnu/libXfixes.so
-bin/main: /usr/lib/x86_64-linux-gnu/libXi.so
-bin/main: /usr/lib/x86_64-linux-gnu/libXext.so
-bin/main: /usr/lib/x86_64-linux-gnu/libX11.so
-bin/main: /usr/lib/x86_64-linux-gnu/libGL.so
-bin/main: /usr/lib/x86_64-linux-gnu/libudev.so
-bin/main: /usr/lib/x86_64-linux-gnu/libfreetype.so
-bin/main: /usr/lib/x86_64-linux-gnu/libharfbuzz.so
-bin/main: /usr/lib/x86_64-linux-gnu/libssh2.so
-bin/main: /usr/lib/x86_64-linux-gnu/libmbedtls.so
-bin/main: /usr/lib/x86_64-linux-gnu/libmbedcrypto.so
-bin/main: /usr/lib/x86_64-linux-gnu/libmbedx509.so
-bin/main: _deps/sfml-build/lib/libsfml-system.a
-bin/main: /usr/lib/x86_64-linux-gnu/libvorbisfile.so
-bin/main: /usr/lib/x86_64-linux-gnu/libvorbisenc.so
-bin/main: /usr/lib/x86_64-linux-gnu/libvorbis.so
-bin/main: /usr/lib/x86_64-linux-gnu/libogg.so
-bin/main: /usr/lib/x86_64-linux-gnu/libFLAC.so
+bin/main: _deps/sfml-build/lib/libsfml-network.so.2.6.0
+bin/main: _deps/sfml-build/lib/libsfml-audio.so.2.6.0
+bin/main: _deps/candle-build/lib/libCandle-s.a
+bin/main: _deps/sfml-build/lib/libsfml-graphics.so.2.6.0
+bin/main: _deps/sfml-build/lib/libsfml-window.so.2.6.0
+bin/main: _deps/sfml-build/lib/libsfml-system.so.2.6.0
 bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mareluca675/Work/shooter-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

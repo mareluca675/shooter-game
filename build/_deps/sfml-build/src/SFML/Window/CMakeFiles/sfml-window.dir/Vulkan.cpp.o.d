@@ -4,6 +4,7 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Vulkan.cpp.o: \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
  /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Config.hpp \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
  /usr/include/c++/15/vector /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
@@ -55,6 +56,13 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Vulkan.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
  /usr/include/c++/15/bits/uses_allocator.h \
  /usr/include/c++/15/bits/uses_allocator_args.h /usr/include/c++/15/tuple \
- /usr/include/c++/15/cassert /usr/include/assert.h \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/VulkanImpl.hpp \
- /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /home/mareluca675/Work/shooter-game/build/_deps/sfml-src/src/SFML/Window/Unix/VulkanImplX11.hpp

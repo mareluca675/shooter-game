@@ -1,8 +1,7 @@
 #include <cassert>
 
 template <typename Resource, typename Identifier>
-void ResourceHolder< Resource, Identifier>::load(Identifier id, const
-	const std::string& file_path) {
+void ResourceHolder< Resource, Identifier>::load(Identifier id, const std::string& file_path) {
 	std::unique_ptr<Resource> resource(new Resource());
 	if (!resource->loadFromFile(file_path)) {
 		throw std::runtime_error("ResourceHolder::load - Failed to load " + file_path);

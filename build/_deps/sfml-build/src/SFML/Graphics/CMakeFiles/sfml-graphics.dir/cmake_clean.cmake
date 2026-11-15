@@ -1,10 +1,16 @@
 file(REMOVE_RECURSE
-  "../../../lib/libsfml-graphics.a"
+  "../../../lib/.2.6"
   "../../../lib/libsfml-graphics.pdb"
+  "../../../lib/libsfml-graphics.so"
+  "../../../lib/libsfml-graphics.so.2.6"
+  "../../../lib/libsfml-graphics.so.2.6.0"
+  "CMakeFiles/sfml-graphics.dir/link.d"
   "CMakeFiles/sfml-graphics.dir/BlendMode.cpp.o"
   "CMakeFiles/sfml-graphics.dir/BlendMode.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/CircleShape.cpp.o"
   "CMakeFiles/sfml-graphics.dir/CircleShape.cpp.o.d"
+  "CMakeFiles/sfml-graphics.dir/Color.cpp.o"
+  "CMakeFiles/sfml-graphics.dir/Color.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.o"
   "CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/Font.cpp.o"
@@ -17,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sfml-graphics.dir/Glsl.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/Image.cpp.o"
   "CMakeFiles/sfml-graphics.dir/Image.cpp.o.d"
+  "CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.o"
+  "CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.o"
   "CMakeFiles/sfml-graphics.dir/RectangleShape.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/RenderStates.cpp.o"
@@ -25,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sfml-graphics.dir/RenderTarget.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.o"
   "CMakeFiles/sfml-graphics.dir/RenderTexture.cpp.o.d"
+  "CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.o"
+  "CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.o"
   "CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.o"
@@ -37,8 +47,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/sfml-graphics.dir/Shape.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/Sprite.cpp.o"
   "CMakeFiles/sfml-graphics.dir/Sprite.cpp.o.d"
-  "CMakeFiles/sfml-graphics.dir/StencilMode.cpp.o"
-  "CMakeFiles/sfml-graphics.dir/StencilMode.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/Text.cpp.o"
   "CMakeFiles/sfml-graphics.dir/Text.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/Texture.cpp.o"
@@ -49,6 +57,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sfml-graphics.dir/Transform.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/Transformable.cpp.o"
   "CMakeFiles/sfml-graphics.dir/Transformable.cpp.o.d"
+  "CMakeFiles/sfml-graphics.dir/Vertex.cpp.o"
+  "CMakeFiles/sfml-graphics.dir/Vertex.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/VertexArray.cpp.o"
   "CMakeFiles/sfml-graphics.dir/VertexArray.cpp.o.d"
   "CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp.o"
@@ -58,6 +68,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C CXX)
+foreach(lang CXX)
   include(CMakeFiles/sfml-graphics.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

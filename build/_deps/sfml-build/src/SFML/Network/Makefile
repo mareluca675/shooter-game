@@ -68,6 +68,26 @@ CMAKE_BINARY_DIR = /home/mareluca675/Work/shooter-game/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	$(CMAKE_USES_TERMINAL_PREFIX)cd /home/mareluca675/Work/shooter-game/build && /usr/local/bin/cpack --config ./CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -90,7 +110,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"bin\" \"devel\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -140,6 +160,13 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
 .PHONY : all
 
+# The main codegen target
+codegen: cmake_check_build_system
+	cd /home/mareluca675/Work/shooter-game/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles /home/mareluca675/Work/shooter-game/build/_deps/sfml-build/src/SFML/Network//CMakeFiles/progress.marks
+	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Network/codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mareluca675/Work/shooter-game/build/CMakeFiles 0
+.PHONY : codegen
+
 # The main clean target
 clean:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/sfml-build/src/SFML/Network/clean
@@ -177,30 +204,6 @@ sfml-network: _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/rule
 sfml-network/fast:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build
 .PHONY : sfml-network/fast
-
-Dns.o: Dns.cpp.o
-.PHONY : Dns.o
-
-# target to build an object file
-Dns.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.o
-.PHONY : Dns.cpp.o
-
-Dns.i: Dns.cpp.i
-.PHONY : Dns.i
-
-# target to preprocess a source file
-Dns.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.i
-.PHONY : Dns.cpp.i
-
-Dns.s: Dns.cpp.s
-.PHONY : Dns.s
-
-# target to generate assembly for a file
-Dns.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Dns.cpp.s
-.PHONY : Dns.cpp.s
 
 Ftp.o: Ftp.cpp.o
 .PHONY : Ftp.o
@@ -297,30 +300,6 @@ Packet.s: Packet.cpp.s
 Packet.cpp.s:
 	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Packet.cpp.s
 .PHONY : Packet.cpp.s
-
-Sftp.o: Sftp.cpp.o
-.PHONY : Sftp.o
-
-# target to build an object file
-Sftp.cpp.o:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.o
-.PHONY : Sftp.cpp.o
-
-Sftp.i: Sftp.cpp.i
-.PHONY : Sftp.i
-
-# target to preprocess a source file
-Sftp.cpp.i:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.i
-.PHONY : Sftp.cpp.i
-
-Sftp.s: Sftp.cpp.s
-.PHONY : Sftp.s
-
-# target to generate assembly for a file
-Sftp.cpp.s:
-	cd /home/mareluca675/Work/shooter-game/build && $(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/Sftp.cpp.s
-.PHONY : Sftp.cpp.s
 
 Socket.o: Socket.cpp.o
 .PHONY : Socket.o
@@ -472,16 +451,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... sfml-network"
-	@echo "... Dns.o"
-	@echo "... Dns.i"
-	@echo "... Dns.s"
 	@echo "... Ftp.o"
 	@echo "... Ftp.i"
 	@echo "... Ftp.s"
@@ -494,9 +473,6 @@ help:
 	@echo "... Packet.o"
 	@echo "... Packet.i"
 	@echo "... Packet.s"
-	@echo "... Sftp.o"
-	@echo "... Sftp.i"
-	@echo "... Sftp.s"
 	@echo "... Socket.o"
 	@echo "... Socket.i"
 	@echo "... Socket.s"

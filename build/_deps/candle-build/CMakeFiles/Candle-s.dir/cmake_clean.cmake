@@ -17,8 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Candle-s.dir/src/RadialLight.cpp.o.d"
   "CMakeFiles/Candle-s.dir/src/VertexArray.cpp.o"
   "CMakeFiles/Candle-s.dir/src/VertexArray.cpp.o.d"
-  "libCandle-s.a"
-  "libCandle-s.pdb"
+  "lib/libCandle-s.a"
+  "lib/libCandle-s.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

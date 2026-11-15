@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libCandle-s.a"
+  "lib/libCandle-s.a"
 )

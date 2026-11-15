@@ -1,4 +1,6 @@
 #include <SFML/Graphics.hpp>
+#include <map>
+#include <memory>
 
 template <typename Resource, typename Identifier>
 class ResourceHolder {
